@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "purpose": "Expanded free/no-key or built-in-token source registry for hourly SignalDaily runs.",
+  "policy": {
+    "financial_advice": "Educational market monitoring only. Do not generate buy/sell/hold recommendations.",
+    "failure_mode": "Fail soft and log individual source failures in Automation Notes.",
+    "hourly_mode": "Hourly runs write immutable updates/YYYY-MM-DD-HHMM.md files instead of overwriting daily/YYYY-MM-DD.md."
+  },
+  "sources": [
+    {
+      "name": "Hacker News Algolia - AI and dev signals",
+      "type": "hn",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "queries": [
+        {"query": "AI OR agents OR LLM OR OpenAI OR Claude OR Gemini OR DeepSeek", "section": "AI & Models", "limit": 8},
+        {"query": "developer tools OR GitHub OR coding agent OR IDE OR framework OR TypeScript OR Python", "section": "Coding & Developer Tools", "limit": 8}
+      ]
+    },
+    {
+      "name": "arXiv AI research feed",
+      "type": "arxiv",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "query": "cat:cs.AI OR cat:cs.CL OR cat:cs.LG OR cat:cs.SE OR cat:cs.CV",
+      "limit": 10
+    },
+    {
+      "name": "GitHub new AI repositories",
+      "type": "github",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "query": "topic:ai stars:>25",
+      "created_within_days": 21,
+      "limit": 8
+    },
+    {
+      "name": "GitHub new agent repositories",
+      "type": "github",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "query": "agent OR agents OR llm topic:llm stars:>15",
+      "created_within_days": 21,
+      "limit": 8
+    },
+    {
+      "name": "GitHub major release monitor",
+      "type": "github_releases",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "repos": ["microsoft/vscode", "microsoft/playwright", "vercel/next.js", "facebook/react", "nodejs/node", "python/cpython", "pytorch/pytorch", "tensorflow/tensorflow", "huggingface/transformers", "langchain-ai/langchain", "ollama/ollama", "openai/openai-python"],
+      "limit_per_repo": 1
+    },
+    {
+      "name": "GitHub security advisories",
+      "type": "github_advisories",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "limit": 8
+    },
+    {
+      "name": "GDELT news discovery",
+      "type": "gdelt",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "timespan": "1d",
+      "queries": [
+        {"query": "(OpenAI OR Anthropic OR Gemini OR DeepMind OR artificial intelligence OR AI model OR coding agent)", "section": "AI & Models", "limit": 8},
+        {"query": "(Sri Lanka OR Colombo Stock Exchange OR CSE OR CBSL OR LKR OR Sri Lankan economy)", "section": "Sri Lanka / CSE / Economy", "limit": 10},
+        {"query": "(global markets OR Federal Reserve OR inflation OR oil prices OR gold prices OR technology stocks OR Nasdaq)", "section": "Global Markets", "limit": 10}
+      ]
+    },
+    {
+      "name": "DEV/Forem articles",
+      "type": "devto",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "tags": ["ai", "machinelearning", "programming", "python", "javascript", "webdev", "opensource"],
+      "top_days": 1,
+      "limit_per_tag": 4
+    },
+    {
+      "name": "Stack Overflow hot questions",
+      "type": "stackexchange",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "site": "stackoverflow",
+      "tag_sets": [
+        {"tags": ["python"], "sort": "hot", "limit": 5},
+        {"tags": ["javascript"], "sort": "hot", "limit": 5},
+        {"tags": ["typescript"], "sort": "hot", "limit": 5},
+        {"tags": ["machine-learning"], "sort": "hot", "limit": 5},
+        {"tags": ["github-actions"], "sort": "hot", "limit": 5}
+      ]
+    },
+    {
+      "name": "Official and engineering RSS feeds",
+      "type": "rss",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "limit_per_feed": 3,
+      "feeds": [
+        {"name": "GitHub Blog Changelog", "url": "https://github.blog/changelog/feed/", "section": "Coding & Developer Tools", "limit": 4},
+        {"name": "Google Developers Blog", "url": "https://developers.googleblog.com/en/feeds/posts/default", "section": "Coding & Developer Tools", "limit": 3},
+        {"name": "Microsoft Azure Blog", "url": "https://azure.microsoft.com/en-us/blog/feed/", "section": "Coding & Developer Tools", "limit": 3},
+        {"name": "AWS Machine Learning Blog", "url": "https://aws.amazon.com/blogs/machine-learning/feed/", "section": "AI & Models", "limit": 3},
+        {"name": "Cloudflare Blog", "url": "https://blog.cloudflare.com/rss/", "section": "Coding & Developer Tools", "limit": 3}
+      ]
+    },
+    {
+      "name": "PyPI package monitor",
+      "type": "pypi",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "packages": ["openai", "anthropic", "google-genai", "langchain", "llama-index", "transformers", "torch", "fastapi", "django", "requests", "pandas"]
+    },
+    {
+      "name": "npm package monitor",
+      "type": "npm",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "packages": ["next", "react", "typescript", "vite", "eslint", "@modelcontextprotocol/sdk", "openai", "zod", "tailwindcss"]
+    },
+    {
+      "name": "CISA Known Exploited Vulnerabilities",
+      "type": "cisa_kev",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "limit": 8,
+      "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+    },
+    {
+      "name": "World Bank Sri Lanka macro indicators",
+      "type": "worldbank",
+      "enabled": true,
+      "profiles": ["daily"],
+      "country": "LK",
+      "indicators": [
+        {"code": "NY.GDP.MKTP.CD", "name": "GDP current US$"},
+        {"code": "FP.CPI.TOTL.ZG", "name": "Inflation consumer prices annual %"},
+        {"code": "SL.UEM.TOTL.ZS", "name": "Unemployment total % of labor force"},
+        {"code": "BX.KLT.DINV.WD.GD.ZS", "name": "Foreign direct investment net inflows % of GDP"},
+        {"code": "NE.EXP.GNFS.ZS", "name": "Exports of goods and services % of GDP"}
+      ]
+    },
+    {
+      "name": "Open exchange-rate snapshot",
+      "type": "fx",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "base": "USD",
+      "targets": ["LKR", "EUR", "GBP", "JPY", "INR", "CNY", "AUD", "SGD"]
+    },
+    {
+      "name": "CoinGecko crypto snapshot",
+      "type": "coingecko",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "ids": ["bitcoin", "ethereum", "solana", "binancecoin", "ripple"],
+      "vs_currencies": ["usd", "lkr"]
+    },
+    {
+      "name": "Stooq global market snapshot",
+      "type": "stooq",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "symbols": ["^spx", "^ndq", "^dji", "aapl.us", "msft.us", "nvda.us", "googl.us", "xauusd", "cl.f"]
+    },
+    {
+      "name": "Open-Meteo Colombo context",
+      "type": "open_meteo",
+      "enabled": true,
+      "profiles": ["hourly", "daily"],
+      "location": "Colombo, Sri Lanka",
+      "latitude": 6.9271,
+      "longitude": 79.8612,
+      "timezone": "Asia/Colombo"
+    }
+  ],
+  "reference_sources": [
+    {"name": "CSE official site", "url": "https://www.cse.lk/"},
+    {"name": "Central Bank of Sri Lanka", "url": "https://www.cbsl.gov.lk/"},
+    {"name": "SEC Sri Lanka", "url": "https://www.sec.gov.lk/"},
+    {"name": "Public APIs directory", "url": "https://publicapis.dev/"},
+    {"name": "GitHub REST API", "url": "https://docs.github.com/en/rest"},
+    {"name": "Stack Exchange API", "url": "https://api.stackexchange.com/docs"},
+    {"name": "DEV/Forem API", "url": "https://developers.forem.com/api/v1"},
+    {"name": "World Bank Indicators API", "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation"},
+    {"name": "SignalDaily source map", "url": "topics/source-map.md"}
+  ]
+}
