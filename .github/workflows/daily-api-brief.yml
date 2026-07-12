@@ -1,0 +1,156 @@
+name: Hourly API SignalDaily Brief
+
+on:
+  schedule:
+    # Runs once per hour. The minute is offset to reduce top-of-hour API congestion.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      report_date:
+        description: "Report date in YYYY-MM-DD format. Defaults to Asia/Colombo today."
+        required: false
+        type: string
+      report_slot:
+        description: "Hourly slot in YYYY-MM-DD-HHMM format. Defaults to current Asia/Colombo hour."
+        required: false
+        type: string
+      report_kind:
+        description: "Use hourly for updates/ files or daily for daily/ files."
+        required: false
+        default: "hourly"
+        type: choice
+        options:
+          - hourly
+          - daily
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: signaldaily-hourly-api-brief
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    name: Generate and commit API brief
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Resolve report date and slot
+        id: time
+        env:
+          INPUT_REPORT_DATE: ${{ inputs.report_date }}
+          INPUT_REPORT_SLOT: ${{ inputs.report_slot }}
+          INPUT_REPORT_KIND: ${{ inputs.report_kind }}
+        run: |
+          REPORT_KIND="${INPUT_REPORT_KIND:-hourly}"
+          if [ -n "$INPUT_REPORT_DATE" ]; then
+            REPORT_DATE="$INPUT_REPORT_DATE"
+          else
+            REPORT_DATE=$(TZ=Asia/Colombo date +%F)
+          fi
+          if [ -n "$INPUT_REPORT_SLOT" ]; then
+            REPORT_SLOT="$INPUT_REPORT_SLOT"
+          else
+            REPORT_SLOT=$(TZ=Asia/Colombo date +%Y-%m-%d-%H00)
+          fi
+          if [ "$REPORT_KIND" = "daily" ]; then
+            OUTPUT_PATH="daily/${REPORT_DATE}.md"
+            SOURCE_PACK_PATH="source-packs/${REPORT_DATE}.json"
+          else
+            OUTPUT_PATH="updates/${REPORT_SLOT}.md"
+            SOURCE_PACK_PATH="source-packs/${REPORT_SLOT}.json"
+          fi
+          echo "report_date=$REPORT_DATE" >> "$GITHUB_OUTPUT"
+          echo "report_slot=$REPORT_SLOT" >> "$GITHUB_OUTPUT"
+          echo "report_kind=$REPORT_KIND" >> "$GITHUB_OUTPUT"
+          echo "output_path=$OUTPUT_PATH" >> "$GITHUB_OUTPUT"
+          echo "source_pack_path=$SOURCE_PACK_PATH" >> "$GITHUB_OUTPUT"
+          echo "Report kind: $REPORT_KIND"
+          echo "Report date: $REPORT_DATE"
+          echo "Report slot: $REPORT_SLOT"
+          echo "Output path: $OUTPUT_PATH"
+
+      - name: Generate API-backed brief
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/generate_hourly.py \
+            --kind "${{ steps.time.outputs.report_kind }}" \
+            --profile "${{ steps.time.outputs.report_kind }}" \
+            --date "${{ steps.time.outputs.report_date }}" \
+            --slot "${{ steps.time.outputs.report_slot }}" \
+            --config "config/hourly-sources.json" \
+            --output "${{ steps.time.outputs.output_path }}" \
+            --source-pack "${{ steps.time.outputs.source_pack_path }}"
+
+      - name: Validate repository
+        run: python scripts/validate_repo.py
+
+      - name: Commit generated files
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${{ steps.time.outputs.output_path }}" "${{ steps.time.outputs.source_pack_path }}"
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No generated changes to commit."
+          else
+            git commit -m "automation: add SignalDaily ${{ steps.time.outputs.report_kind }} update for ${{ steps.time.outputs.report_slot }}"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create run issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const slot = '${{ steps.time.outputs.report_slot }}' || new Date().toISOString().slice(0, 13);
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `SignalDaily API run failed: ${slot}`,
+              body: [
+                `The hourly API-powered SignalDaily workflow failed for ${slot}.`,
+                ``,
+                `Run: ${runUrl}`,
+                ``,
+                `Check API failures, rate limits, source schema changes, or validator errors.`
+              ].join('\n'),
+              labels: ['daily-brief', 'automation-failure']
+            });
+
+      - name: Optional Telegram completion alert
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPORT_SLOT: ${{ steps.time.outputs.report_slot }}
+          REPORT_KIND: ${{ steps.time.outputs.report_kind }}
+          OUTPUT_PATH: ${{ steps.time.outputs.output_path }}
+          JOB_STATUS: ${{ job.status }}
+          CHANGED: ${{ steps.commit.outputs.changed }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "Telegram secrets are not configured; skipping Telegram alert."
+            exit 0
+          fi
+
+          TEXT="SignalDaily ${REPORT_KIND} API run: ${REPORT_SLOT}%0AStatus: ${JOB_STATUS}%0ACommitted: ${CHANGED}%0AReport: ${OUTPUT_PATH}%0AEducational only; not financial advice."
+          curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=${TEXT}" \
+            --data-urlencode "disable_web_page_preview=true"
