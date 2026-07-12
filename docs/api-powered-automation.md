@@ -1,21 +1,21 @@
 # API-Powered SignalDaily Automation
 
-SignalDaily now has a no-paid-LLM automation path. GitHub Actions can fetch free/no-key public APIs, generate a Markdown daily brief, validate it, commit it to `daily/YYYY-MM-DD.md`, and optionally send a Telegram alert.
+SignalDaily now has a no-paid-LLM automation path. GitHub Actions can fetch free/no-key or built-in-token public APIs, generate Markdown hourly updates, validate the repo, commit the files, and optionally send a Telegram alert.
 
 ## What this does
 
 ```text
-GitHub Actions schedule
-  -> scripts/generate_daily.py
-  -> free public APIs from config/sources.json
-  -> daily/YYYY-MM-DD.md
-  -> source-packs/YYYY-MM-DD.json
+GitHub Actions hourly schedule
+  -> scripts/generate_hourly.py
+  -> free public APIs from config/hourly-sources.json
+  -> updates/YYYY-MM-DD-HHMM.md
+  -> source-packs/YYYY-MM-DD-HHMM.json
   -> scripts/validate_repo.py
   -> git commit + push
   -> optional Telegram alert
 ```
 
-The generated brief is deterministic and extractive. It does not use the OpenAI API, so it avoids API-credit cost. It is not as smart as a full ChatGPT Agent brief, but it gives a stable daily base report and source pack.
+The generated update is deterministic and extractive. It does not use the OpenAI API, so it avoids API-credit cost. It is not as smart as a full ChatGPT Agent brief, but it gives a stable source-backed base layer that can run 24 times per day.
 
 ## Workflow
 
@@ -28,46 +28,77 @@ The workflow file is:
 Default schedule:
 
 ```text
-06:15 Asia/Colombo every day
+Every hour at minute 17 UTC
 ```
+
+Because Sri Lanka is UTC+05:30, this still equals one run every hour in Asia/Colombo time. The minute is offset from the top of the hour to reduce API congestion.
 
 Manual run:
 
 1. Open the repository on GitHub.
 2. Go to **Actions**.
-3. Select **Daily API SignalDaily Brief**.
+3. Select **Hourly API SignalDaily Brief**.
 4. Click **Run workflow**.
-5. Optionally enter a `report_date` in `YYYY-MM-DD` format.
+5. Optionally enter:
+   - `report_date` in `YYYY-MM-DD` format
+   - `report_slot` in `YYYY-MM-DD-HHMM` format
+   - `report_kind` as `hourly` or `daily`
 
-## Source registry
+## Why hourly output goes to `updates/`
 
-The source registry is:
+A 24-times-per-day workflow should not overwrite the same `daily/YYYY-MM-DD.md` file every hour. The hourly mode writes immutable files instead:
 
 ```text
-config/sources.json
+updates/YYYY-MM-DD-HHMM.md
+source-packs/YYYY-MM-DD-HHMM.json
 ```
 
-Currently configured source types:
-
-| Source type | Purpose | Key required |
-|---|---:|---:|
-| `hn` | AI/dev community signals from Hacker News Algolia | No |
-| `arxiv` | Recent AI, ML, NLP, and software engineering papers | No |
-| `github` | Recently created AI/dev-tool repositories | No, but `GITHUB_TOKEN` improves rate limits |
-| `gdelt` | Global news discovery for AI, Sri Lanka, and markets | No |
-| `fx` | USD/LKR and other FX snapshots | No |
-| `coingecko` | Crypto price context | No |
-
-## Output files
-
-Every successful run writes:
+If you manually choose `report_kind=daily`, the workflow writes:
 
 ```text
 daily/YYYY-MM-DD.md
 source-packs/YYYY-MM-DD.json
 ```
 
-The Markdown file is the human-readable daily brief. The JSON source pack preserves structured raw signal data, source failures, and diagnostics so the system can be improved later.
+## Source registry
+
+The source registry is:
+
+```text
+config/hourly-sources.json
+```
+
+Configured source types:
+
+| Source type | Purpose | Key required |
+|---|---|---|
+| `hn` | AI/dev community signals from Hacker News Algolia | No |
+| `arxiv` | Recent AI, ML, NLP, CV, and software-engineering papers | No |
+| `github` | Newly created AI/agent/dev-tool repositories | No, but `GITHUB_TOKEN` improves rate limits |
+| `github_releases` | Releases from major developer and AI repositories | No, uses built-in `GITHUB_TOKEN` when available |
+| `github_advisories` | Security advisories affecting developer dependencies | No, uses built-in `GITHUB_TOKEN` when available |
+| `gdelt` | Global news discovery for AI, Sri Lanka, and markets | No |
+| `devto` | Developer articles from DEV/Forem | No |
+| `stackexchange` | Hot developer questions from Stack Overflow | No |
+| `rss` | Official/engineering feeds where stable RSS/Atom exists | No |
+| `pypi` | Python package release context | No |
+| `npm` | JavaScript/TypeScript package release context | No |
+| `cisa_kev` | Known exploited vulnerability feed | No |
+| `worldbank` | Sri Lanka macro indicators | No; daily profile only |
+| `fx` | USD/LKR and other FX snapshots | No |
+| `coingecko` | Crypto price context | No, but can be rate-limited |
+| `stooq` | Global index, stock, commodity, and FX-like quote snapshots | No |
+| `open_meteo` | Colombo operating-context weather | No |
+
+## Profiles
+
+Each source can declare profiles:
+
+```json
+"profiles": ["hourly", "daily"]
+```
+
+Hourly runs use `profile=hourly`. Manual daily runs use `profile=daily`. Slow-moving sources, such as World Bank macro indicators, can be set to daily only to avoid noise.
 
 ## Telegram
 
@@ -82,18 +113,22 @@ If the secrets are missing, the workflow still generates and commits the report.
 
 ## Failure behavior
 
-The generator uses fail-soft behavior. If one API fails, the report still gets created with an **Automation Notes** section listing failures. The workflow creates a GitHub issue only when the whole job fails, for example because validation fails or GitHub cannot push.
+The generator uses fail-soft behavior. If one API fails, the update still gets created with an **Automation Notes** section listing failures. The workflow creates a GitHub issue only when the whole job fails, for example because validation fails or GitHub cannot push.
+
+## Rate-limit discipline
+
+Hourly automation is useful, but more APIs does not automatically mean better intelligence. The source registry keeps per-source limits small and deduplicates by URL. If a source starts failing repeatedly, reduce its limits, move it to daily-only, or disable it until the schema/rate-limit issue is fixed.
 
 ## Market-content boundary
 
-The daily report can include FX, crypto, CSE, macro, and market context, but it must remain educational. It must not recommend buying, selling, holding, shorting, or trading any security or asset.
+The report can include FX, crypto, CSE, macro, and market context, but it must remain educational. It must not recommend buying, selling, holding, shorting, or trading any security or asset.
 
 ## How to improve later
 
 High-value next upgrades:
 
 1. Add official CBSL and CSE collectors if stable machine-readable endpoints are identified.
-2. Add RSS collectors for official AI lab blogs and developer changelogs.
-3. Add a weekly rollup generator using the committed `source-packs/*.json` files.
-4. Add a topic index builder that tracks recurring companies, models, repositories, and macro themes.
+2. Add a weekly rollup generator using the committed `source-packs/*.json` files.
+3. Add a topic index builder that tracks recurring companies, models, repositories, vulnerabilities, packages, and macro themes.
+4. Add duplicate clustering across hourly updates so repeated stories do not dominate the archive.
 5. Add an LLM summarizer only after API credits are available, using the source pack as grounded input.
