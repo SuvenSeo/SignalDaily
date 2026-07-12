@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "purpose": "Free/no-key API source registry for the SignalDaily daily Markdown generator.",
+  "policy": {
+    "financial_advice": "Educational market monitoring only. Do not generate buy/sell/hold recommendations.",
+    "source_priority": "Prefer official and primary sources when available. Use community/news APIs as discovery signals, not final proof.",
+    "failure_mode": "Fail soft: generate the daily brief even if one or more APIs fail. Log failures in Automation Notes."
+  },
+  "sources": [
+    {
+      "name": "Hacker News Algolia - AI signals",
+      "type": "hn",
+      "enabled": true,
+      "queries": [
+        {"query": "AI OR agents OR LLM OR OpenAI OR Claude OR Gemini", "section": "AI & Models", "limit": 8},
+        {"query": "developer tools OR GitHub OR coding agent OR IDE OR framework", "section": "Coding & Developer Tools", "limit": 8}
+      ],
+      "notes": "No key required. Community attention signal only."
+    },
+    {
+      "name": "arXiv AI research feed",
+      "type": "arxiv",
+      "enabled": true,
+      "query": "cat:cs.AI OR cat:cs.CL OR cat:cs.LG OR cat:cs.SE",
+      "limit": 8,
+      "notes": "No key required. Recent AI/ML/NLP/software-engineering research discovery."
+    },
+    {
+      "name": "GitHub new AI repositories",
+      "type": "github",
+      "enabled": true,
+      "query": "topic:ai stars:>25",
+      "created_within_days": 21,
+      "limit": 8,
+      "notes": "Uses the GitHub Actions GITHUB_TOKEN automatically when available."
+    },
+    {
+      "name": "GDELT news discovery",
+      "type": "gdelt",
+      "enabled": true,
+      "timespan": "2d",
+      "queries": [
+        {"query": "(OpenAI OR Anthropic OR Gemini OR artificial intelligence OR AI model)", "section": "AI & Models", "limit": 6},
+        {"query": "(Sri Lanka OR Colombo Stock Exchange OR CSE OR CBSL OR LKR)", "section": "Sri Lanka / CSE / Economy", "limit": 8},
+        {"query": "(global markets OR Federal Reserve OR inflation OR oil prices OR gold prices OR technology stocks)", "section": "Global Markets", "limit": 8}
+      ],
+      "notes": "No key required. Treat as discovery; verify high-impact claims."
+    },
+    {
+      "name": "Open exchange-rate snapshot",
+      "type": "fx",
+      "enabled": true,
+      "base": "USD",
+      "targets": ["LKR", "EUR", "GBP", "JPY", "INR", "CNY"],
+      "notes": "No key required open endpoint. FX context only, not trading advice."
+    },
+    {
+      "name": "CoinGecko crypto snapshot",
+      "type": "coingecko",
+      "enabled": true,
+      "ids": ["bitcoin", "ethereum", "solana"],
+      "vs_currencies": ["usd", "lkr"],
+      "notes": "Free crypto price context. May be rate limited."
+    }
+  ],
+  "reference_sources": [
+    {"name": "CSE official site", "url": "https://www.cse.lk/"},
+    {"name": "Central Bank of Sri Lanka", "url": "https://www.cbsl.gov.lk/"},
+    {"name": "SEC Sri Lanka", "url": "https://www.sec.gov.lk/"},
+    {"name": "Public APIs directory", "url": "https://publicapis.dev/"},
+    {"name": "SignalDaily source map", "url": "topics/source-map.md"}
+  ]
+}
