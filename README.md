@@ -2,31 +2,60 @@
 
 SignalDaily is a daily intelligence archive for AI, technology, coding tools, Sri Lankan markets, CSE-related developments, global markets, and future opportunities.
 
-This repository is designed to work with a ChatGPT Agent rather than the OpenAI API. The agent researches and writes daily briefs. This repo stores the final reports, templates, topic indexes, and operating rules.
+The repo is optimized for a **ChatGPT Agent-first workflow**. The agent researches and writes the daily intelligence brief. GitHub stores the permanent archive, templates, operating rules, source map, quality checks, and automation scaffolding.
 
-## Core workflow
+## Current operating model
 
 ```text
 ChatGPT Agent
   -> researches current sources
   -> writes a GitHub-ready Markdown brief
-  -> provides file path, commit message, and Telegram-ready alert
-  -> report is committed to this repo
+  -> commits daily/YYYY-MM-DD.md when GitHub writing is available
+  -> prepares a Telegram-ready alert
+  -> updates the long-term intelligence archive
 ```
+
+This setup does **not** require OpenAI API credits.
+
+## What makes a good SignalDaily brief
+
+A strong brief answers:
+
+- What changed?
+- Why does it matter?
+- Who is affected?
+- What should Seo watch next?
+- What can Seo build, learn, or research from this?
+
+Every brief should separate facts from interpretation, use source links, avoid hype, and avoid direct financial advice.
 
 ## Repository structure
 
 ```text
 SignalDaily/
 ├── AGENT.md
+├── DISCLAIMER.md
+├── OPERATIONS.md
 ├── PROMPTS.md
 ├── README.md
+├── SECURITY.md
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   ├── workflows/
+│   └── pull_request_template.md
 ├── daily/
-├── weekly/
-├── monthly/
-├── topics/
+├── docs/
+│   ├── product-roadmap.md
+│   ├── quality-standard.md
+│   └── telegram-integration.md
 ├── ideas/
-└── templates/
+├── monthly/
+├── scripts/
+│   └── validate_repo.py
+├── templates/
+├── topics/
+├── updates/
+└── weekly/
 ```
 
 ## Daily report location
@@ -58,6 +87,36 @@ Each brief should include:
 9. GitHub-Ready Output
 10. Sources
 
+## Quality gate
+
+Run the validator locally or through GitHub Actions:
+
+```bash
+python scripts/validate_repo.py
+```
+
+The validator checks required files, Markdown hygiene, daily filename format, required daily sections, source count warnings, and unsafe financial-advice wording.
+
+## Automation
+
+The repo includes two GitHub Actions workflows:
+
+| Workflow | Purpose |
+|---|---|
+| `Repo Quality` | Runs the repository validator on pushes, pull requests, and manual dispatch. |
+| `Daily SignalDaily Reminder` | Creates a daily GitHub issue at 06:00 Asia/Colombo and optionally sends a Telegram reminder if secrets are configured. |
+
+## Telegram
+
+See `docs/telegram-integration.md`.
+
+Optional repository secrets:
+
+| Secret | Purpose |
+|---|---|
+| `TELEGRAM_BOT_TOKEN` | Telegram bot token. |
+| `TELEGRAM_CHAT_ID` | Target chat, group, or channel ID. |
+
 ## Non-negotiable rules
 
 - Use current web research.
@@ -69,14 +128,16 @@ Each brief should include:
 - Avoid hype.
 - Keep output concise, useful, and GitHub-ready.
 
-## Current operating model
+## Upgrade path
 
-This repo is currently optimized for the no-API setup:
+Later, this repo can be upgraded to a full API-powered pipeline:
 
 ```text
-ChatGPT Agent = research and write
-GitHub repo = permanent archive
-Telegram = short alert message prepared by the agent
+GitHub Actions -> Python collector -> OpenAI API -> Markdown report -> commit -> Telegram alert
 ```
 
-Later, this repo can be upgraded to a full GitHub Actions + OpenAI API automation if API credits become available.
+Until API credits are available, the stable path is:
+
+```text
+GitHub Actions reminder -> ChatGPT Agent run -> GitHub archive -> Telegram alert
+```
