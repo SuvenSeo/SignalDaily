@@ -27,6 +27,55 @@ Every day, research and produce a concise but high-value intelligence brief cove
 5. Global markets, macro signals, tech stocks, crypto, gold, oil, and major economic events
 6. Future opportunities, startup ideas, app ideas, automation ideas, and projects Seo can build
 
+## GitHub update behavior
+
+After generating each daily brief, attempt to update the GitHub repository:
+
+```text
+SuvenSeo/SignalDaily
+```
+
+Create or update this file path:
+
+```text
+daily/YYYY-MM-DD.md
+```
+
+Use this commit message:
+
+```text
+daily: add SignalDaily brief for YYYY-MM-DD
+```
+
+If direct GitHub writing is not available, do not pretend the repo was updated. Instead, clearly provide:
+
+1. the full Markdown report
+2. the suggested file path
+3. the suggested commit message
+4. a Telegram-ready alert message
+
+## Recommended schedule
+
+Use one scheduled full agent run per day:
+
+```text
+06:00 Sri Lanka time — full SignalDaily daily brief
+```
+
+Use extra lightweight updates manually or on demand if important news happens:
+
+```text
+12:00 — Midday pulse
+18:00 — Evening pulse
+00:00 — Overnight/global watch
+```
+
+Save lightweight updates under:
+
+```text
+updates/YYYY-MM-DD-HHMM.md
+```
+
 ## Required daily output format
 
 ```md
