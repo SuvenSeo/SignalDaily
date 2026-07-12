@@ -27,6 +27,17 @@ Every day, research and produce a concise but high-value intelligence brief cove
 5. Global markets, macro signals, tech stocks, crypto, gold, oil, and major economic events
 6. Future opportunities, startup ideas, app ideas, automation ideas, and projects Seo can build
 
+## Required repository references
+
+Before writing a full brief, use these repo files as operating context:
+
+- `templates/daily-brief.md` for the daily report skeleton
+- `topics/source-map.md` for source priorities
+- `docs/quality-standard.md` for scoring and rejection conditions
+- `DISCLAIMER.md` for market-content boundaries
+- `SECURITY.md` for agent and automation safety rules
+- `docs/telegram-integration.md` for alert behavior
+
 ## GitHub update behavior
 
 After generating each daily brief, attempt to update the GitHub repository:
@@ -167,5 +178,13 @@ A good SignalDaily brief should answer:
 - Who is affected?
 - What should Seo watch next?
 - What can Seo build, learn, or research from this?
+
+A high-end SignalDaily brief should also:
+
+- score at least 85/100 against `docs/quality-standard.md`
+- use `topics/source-map.md` to prioritize primary sources
+- include exact dates for current claims
+- flag stale market data during weekends or holidays
+- pass `python scripts/validate_repo.py` after being committed
 
 If a claim is uncertain or based on limited evidence, say so clearly.

@@ -1,0 +1,90 @@
+name: Daily SignalDaily Reminder
+
+on:
+  schedule:
+    # 00:30 UTC = 06:00 Asia/Colombo.
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  remind:
+    name: Create daily run issue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create or reuse today's run issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const formatter = new Intl.DateTimeFormat('en-CA', {
+              timeZone: 'Asia/Colombo',
+              year: 'numeric',
+              month: '2-digit',
+              day: '2-digit'
+            });
+            const date = formatter.format(new Date());
+            const title = `SignalDaily run: ${date}`;
+            const path = `daily/${date}.md`;
+            const query = `repo:${context.repo.owner}/${context.repo.repo} type:issue in:title "${title}"`;
+            const existing = await github.rest.search.issuesAndPullRequests({ q: query, per_page: 1 });
+
+            if (existing.data.total_count > 0) {
+              core.notice(`Issue already exists for ${date}.`);
+              return;
+            }
+
+            const body = [
+              `## SignalDaily daily run`,
+              ``,
+              `Date: ${date}`,
+              `Target file: \`${path}\``,
+              `Commit message: \`daily: add SignalDaily brief for ${date}\``,
+              ``,
+              `### Run prompt`,
+              ``,
+              `\`\`\`text`,
+              `Run today's SignalDaily brief. Research current AI, technology, coding tools, Sri Lanka/CSE/economy, global markets, and opportunity signals. Generate a GitHub-ready Markdown report using the SignalDaily format.`,
+              ``,
+              `After generating the report, attempt to update SuvenSeo/SignalDaily by creating or updating ${path}. Use commit message: daily: add SignalDaily brief for ${date}.`,
+              ``,
+              `If direct GitHub writing is not available, provide the full Markdown report, suggested file path, commit message, and Telegram-ready alert.`,
+              `\`\`\``,
+              ``,
+              `### Quality checklist`,
+              ``,
+              `- [ ] Uses current sources`,
+              `- [ ] Separates facts from interpretation`,
+              `- [ ] Includes no buy/sell financial advice`,
+              `- [ ] Includes source links`,
+              `- [ ] Includes Telegram-ready alert`,
+              `- [ ] Passes repo validator`
+            ].join('\n');
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['daily-brief', 'agent-run']
+            });
+
+      - name: Optional Telegram reminder
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "Telegram secrets are not configured; skipping Telegram reminder."
+            exit 0
+          fi
+
+          DATE=$(TZ=Asia/Colombo date +%F)
+          TEXT="SignalDaily reminder: run today's brief for ${DATE}. Target: daily/${DATE}.md"
+
+          curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=${TEXT}" \
+            --data-urlencode "disable_web_page_preview=true"
