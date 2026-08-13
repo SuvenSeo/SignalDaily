@@ -1,0 +1,1393 @@
+{
+  "label": "2026-08-13-2300",
+  "report_kind": "hourly",
+  "generated_at_utc": "2026-08-13T18:08:51.068080+00:00",
+  "item_count": 95,
+  "failures": [
+    "GDELT news discovery: HTTPError: HTTP Error 429: Too Many Requests",
+    "Stack Overflow hot questions: HTTPError: HTTP Error 400: Bad Request",
+    "Official and engineering RSS feeds: HTTPError: HTTP Error 404: Not Found",
+    "Stooq global market snapshot: HTTPError: HTTP Error 404: Not Found"
+  ],
+  "diagnostics": {
+    "Hacker News Algolia - AI and dev signals": {
+      "status": "ok",
+      "seconds": 0.65,
+      "items": 6
+    },
+    "arXiv AI research feed": {
+      "status": "ok",
+      "seconds": 0.11,
+      "items": 10
+    },
+    "GitHub new AI repositories": {
+      "status": "ok",
+      "seconds": 0.41,
+      "items": 8
+    },
+    "GitHub new agent repositories": {
+      "status": "ok",
+      "seconds": 0.39,
+      "items": 8
+    },
+    "GitHub major release monitor": {
+      "status": "ok",
+      "seconds": 3.17,
+      "items": 11
+    },
+    "GitHub security advisories": {
+      "status": "ok",
+      "seconds": 0.36,
+      "items": 8
+    },
+    "GDELT news discovery": {
+      "status": "failed"
+    },
+    "DEV/Forem articles": {
+      "status": "ok",
+      "seconds": 0.98,
+      "items": 28
+    },
+    "Stack Overflow hot questions": {
+      "status": "failed"
+    },
+    "Official and engineering RSS feeds": {
+      "status": "failed"
+    },
+    "PyPI package monitor": {
+      "status": "ok",
+      "seconds": 0.35,
+      "items": 11
+    },
+    "npm package monitor": {
+      "status": "ok",
+      "seconds": 1.46,
+      "items": 9
+    },
+    "CISA Known Exploited Vulnerabilities": {
+      "status": "ok",
+      "seconds": 0.08,
+      "items": 8
+    },
+    "Open exchange-rate snapshot": {
+      "status": "ok",
+      "seconds": 0.05,
+      "items": 1
+    },
+    "CoinGecko crypto snapshot": {
+      "status": "ok",
+      "seconds": 0.1,
+      "items": 1
+    },
+    "Stooq global market snapshot": {
+      "status": "failed"
+    },
+    "Open-Meteo Colombo context": {
+      "status": "ok",
+      "seconds": 0.43,
+      "items": 1
+    }
+  },
+  "items": [
+    {
+      "section": "Coding & Developer Tools",
+      "title": "yc-software/qm",
+      "url": "https://github.com/yc-software/qm",
+      "source": "GitHub Search API",
+      "published": "2026-07-29T20:03:08Z",
+      "summary": "Multiplayer agent harness for work.",
+      "metric": "13415 stars, 1571 forks",
+      "score": 16557.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "FareedKhan-dev/kimi-k3-in-c",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "source": "GitHub Search API",
+      "published": "2026-08-01T09:29:38Z",
+      "summary": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+      "metric": "5415 stars, 880 forks",
+      "score": 7175.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "guillaumemeyer/watermarks-remover",
+      "url": "https://github.com/guillaumemeyer/watermarks-remover",
+      "source": "GitHub Search API",
+      "published": "2026-08-11T16:32:38Z",
+      "summary": "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD",
+      "metric": "4770 stars, 464 forks",
+      "score": 5698.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "genspark-ai/genoffice",
+      "url": "https://github.com/genspark-ai/genoffice",
+      "source": "GitHub Search API",
+      "published": "2026-07-31T09:40:58Z",
+      "summary": "Free, open-source AI office suite for macOS, Windows & Linux — Word (.docx), Excel (.xlsx), PowerPoint (.pptx), PDF and Markdown editing with built-in AI agents.",
+      "metric": "2938 stars, 524 forks",
+      "score": 3986.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "ShawnPana/phone-harness",
+      "url": "https://github.com/ShawnPana/phone-harness",
+      "source": "GitHub Search API",
+      "published": "2026-08-07T22:28:53Z",
+      "summary": "let your agent control your phone",
+      "metric": "1707 stars, 152 forks",
+      "score": 2011.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "SaladDay/pi-from-scratch",
+      "url": "https://github.com/SaladDay/pi-from-scratch",
+      "source": "GitHub Search API",
+      "published": "2026-08-09T12:15:30Z",
+      "summary": "600 行 TypeScript 写成的超级迷你版 pi，让你轻松从 0 写出属于你的 pi-agent",
+      "metric": "848 stars, 58 forks",
+      "score": 964.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Pan-Chera/Multi-Agent-CAD",
+      "url": "https://github.com/Pan-Chera/Multi-Agent-CAD",
+      "source": "GitHub Search API",
+      "published": "2026-07-30T17:19:26Z",
+      "summary": "MAC (Multi-Agent CAD): A decoupled multi-agent framework for text-to-CAD generation via constrained test-time compute",
+      "metric": "796 stars, 70 forks",
+      "score": 936.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Pinvou/pinvou-agent",
+      "url": "https://github.com/Pinvou/pinvou-agent",
+      "source": "GitHub Search API",
+      "published": "2026-07-24T07:28:41Z",
+      "summary": "Open-source desktop AI agent for tools, files, knowledge, workflows, and real deliverables.",
+      "metric": "719 stars, 102 forks",
+      "score": 923.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "mikehasa/agentacct",
+      "url": "https://github.com/mikehasa/agentacct",
+      "source": "GitHub Search API",
+      "published": "2026-07-24T16:28:06Z",
+      "summary": "See what your coding agents did and what it cost. Breaks each task down into work steps — tools used, files changed, tests run, time and tokens spent. Local-first dashboard for Claude Code, Codex, OpenCode, and more. No login, no telemetry.",
+      "metric": "585 stars, 69 forks",
+      "score": 723.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "aigclink/geolook",
+      "url": "https://github.com/aigclink/geolook",
+      "source": "GitHub Search API",
+      "published": "2026-07-29T07:51:43Z",
+      "summary": "Open-source end-to-end GEO implementation: status analysis, diagnosis, strategy, tickets, execution, verification",
+      "metric": "485 stars, 117 forks",
+      "score": 719.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "fuxicodex/Fuxi",
+      "url": "https://github.com/fuxicodex/Fuxi",
+      "source": "GitHub Search API",
+      "published": "2026-08-04T07:32:11Z",
+      "summary": "FuXi is a fast, self-contained AI coding agent that lives in your terminal — edit code, run commands, and drive tools, with cost-aware routing across LLM providers.",
+      "metric": "493 stars, 49 forks",
+      "score": 591.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "deerwork-ai/deer-workflow",
+      "url": "https://github.com/deerwork-ai/deer-workflow",
+      "source": "GitHub Search API",
+      "published": "2026-07-26T04:20:50Z",
+      "summary": "An open-source graph engineering runtime that keeps orchestration in TypeScript and delegates semantic work to replaceable Agent runtimes.",
+      "metric": "470 stars, 46 forks",
+      "score": 562.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Anionex/agent-vision-toolkit",
+      "url": "https://github.com/Anionex/agent-vision-toolkit",
+      "source": "GitHub Search API",
+      "published": "2026-08-01T10:00:13Z",
+      "summary": "为纯文本模型\"看图“设计更好的视觉工具箱和技能，支持多图理解，图片问答，前端UI还原、GUI 自动化等，并可选无缝接入多个主流agent，直接识别粘贴图片｜ A vision toolkit and skill designed for text-only llms — image Q&A, long-screenshot OCR, frontend UI restoration, and GUI automation, with optional seamless integration for Codex, Claude Code, Pi, Oh My Pi, and OpenCode",
+      "metric": "500 stars, 22 forks",
+      "score": 544.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "vercel-labs/marketing-team-eve-template",
+      "url": "https://github.com/vercel-labs/marketing-team-eve-template",
+      "source": "GitHub Search API",
+      "published": "2026-07-26T06:27:51Z",
+      "summary": "Team of marketing agents built on eve.",
+      "metric": "438 stars, 18 forks",
+      "score": 474.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "source": "Hacker News / Algolia",
+      "published": "2026-07-12T18:28:15Z",
+      "summary": "Hello HN, I don't post on here much, but wanted to get some eyes on a new project I'm just launching. I think we definitely need one more AI code agent.. I'm a long-term C++ dev, and over 30+ years I've created some successful audio dev tools (JUCE, the Tracktion DAW, the Cmajor DSP language). All of these came from m...",
+      "metric": "280 points, 119 comments",
+      "score": 458.5,
+      "tags": [
+        "community-signal"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "waiterve/wai-play",
+      "url": "https://github.com/waiterve/wai-play",
+      "source": "GitHub Search API",
+      "published": "2026-08-04T07:20:22Z",
+      "summary": "WAI Play - AI web game testing and quality evaluation platform",
+      "metric": "421 stars, 16 forks",
+      "score": 453.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "24 Cups, 36 Seats — The Bartender's Ledger",
+      "url": "https://dev.to/xulingfeng/24-cups-36-seats-the-bartenders-ledger-40aj",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T07:58:42Z",
+      "summary": "24 stories. 24 visits. One counter, same six faces. The Third Cup The AI wave hit, and...",
+      "metric": "tag ai, 44 reactions, 21 comments",
+      "score": 86.0,
+      "tags": [
+        "developer-writing",
+        "ai"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "CISA KEV: CVE-2026-20349 affecting Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "source": "CISA KEV JSON catalog",
+      "published": "2026-08-11",
+      "summary": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
+      "metric": "Due: 2026-08-14",
+      "score": 85.0,
+      "tags": [
+        "security",
+        "vulnerability"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-rm43-82j9-r4mj: atomic-agents-stack: Dashboard HTTP server path traversal allows arbitrary file read",
+      "url": "https://github.com/advisories/GHSA-rm43-82j9-r4mj",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-08-13T14:17:13Z",
+      "summary": "The optional dashboard HTTP server (`atomic_agents/dashboard/serve.py`) builds filesystem paths directly from the request path and serves them without a containment check. It is the only per-request untrusted-path site in the codebase that does not route through `_io.safe_resolve_under`. Literal `../` segments survive...",
+      "metric": "Severity: high",
+      "score": 75.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-48p8-g2fx-3wwm: Argo Workflows: ArtifactGC.PodSpecPatch bypasses Strict/Secure template reference allow-list (Incomplete fix for CVE-2026-31892)",
+      "url": "https://github.com/advisories/GHSA-48p8-g2fx-3wwm",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-08-13T14:16:09Z",
+      "summary": "### Summary The allow-list fix for CVE-2026-31892 (GHSA-3wf5-g532-rcrr), and its follow-up coverage of `hostNetwork`/`securityContext`/`serviceAccountName` in GHSA-3775-99mw-8rp4, is incomplete. `workflow/util/merge.go` `ValidateUserOverrides` / `SanitizeUserWorkflowSpec` walk only the top-level fields of `WorkflowSpe...",
+      "metric": "Severity: high",
+      "score": 75.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-2mhj-fhvg-v428: Pimcore: ClassDefinition UID regex missing end anchor allows SQL injection via Block.php unquoted table name",
+      "url": "https://github.com/advisories/GHSA-2mhj-fhvg-v428",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-08-13T13:44:24Z",
+      "summary": "### Summary A missing end anchor (`$`) in the ClassDefinition UID validation regex allows an authenticated user with the `objects` permission to create a class with a malicious UID containing SQL. When a data object of that class is later loaded, Block.php concatenates the raw classId directly into a SQL query without...",
+      "metric": "Severity: high",
+      "score": 75.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "langchain-ai/langchain release: langchain-openai==1.5.0",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.5.0",
+      "source": "GitHub Releases API",
+      "published": "2026-08-13T13:15:00Z",
+      "summary": "Changes since langchain-openai==1.4.3 release(openai): 1.5.0 (#39629) feat(openai): support openai 3.0 SDK (#39613) chore(partners): bump langgraph floor in openai and huggingface lockfiles (#39617)",
+      "metric": "langchain-openai==1.5.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "vercel/next.js release: v16.3.1-canary.15",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.3.1-canary.15",
+      "source": "GitHub Releases API",
+      "published": "2026-08-12T23:50:16Z",
+      "summary": "### Misc Changes - test: fix 'ouput' typo in parseIdsFromCliOutput: #97266 - Add the mtime fallback back: #97268 - Allow issue participants to request reopening: #96947 - [turbopack] Document clusters for chunking: #97267 - Link to issues in the contribution guide and discourage trivial PRs: #97188 - Stop serializing...",
+      "metric": "v16.3.1-canary.15",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "ollama/ollama release: v0.32.10",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.32.10-rc1",
+      "source": "GitHub Releases API",
+      "published": "2026-08-12T22:36:49Z",
+      "summary": "## What's Changed - Models that don't set a `repeat_penalty` now default to 1.0 (off) instead of 1.1, matching other engines and speeding up speculative decoding; set a per-model parameter if an older model repeats itself. - Faster prefill on NVFP4 MLX models with a global scale, about 7–8% on Qwen3.6 and Muse Glimmer...",
+      "metric": "v0.32.10-rc1",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "microsoft/vscode release: 1.133.0",
+      "url": "https://github.com/microsoft/vscode/releases/tag/1.133.0",
+      "source": "GitHub Releases API",
+      "published": "2026-08-12T09:41:17Z",
+      "summary": "https://code.visualstudio.com/updates/v1_133",
+      "metric": "1.133.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "openai/openai-python release: v3.0.0",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.0.0",
+      "source": "GitHub Releases API",
+      "published": "2026-08-12T01:54:46Z",
+      "summary": "## [3.0.0](https://github.com/openai/openai-python/compare/v2.54.0...v3.0.0) (2026-08-12) ### ⚠ BREAKING CHANGES * **api:** HTTPX2 is now the default HTTP client, and `httpx` is no longer installed automatically. Applications using custom HTTPX clients, transports, or configuration objects must migrate to their HTTPX2...",
+      "metric": "v3.0.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "huggingface/transformers release: Release: v5.15.0",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.15.0",
+      "source": "GitHub Releases API",
+      "published": "2026-08-10T10:28:13Z",
+      "summary": "# Release v5.15.0 ## New Model additions ### Meta Muse Glimmer Muse Glimmer, released today, is Meta’s new multimodal model, especially designed for agentic use cases. Distilled from Muse to 30B parameters, and released under the Apache 2.0 license, it can be deployed to local setups for privacy-aware applications suc...",
+      "metric": "v5.15.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "nodejs/node release: 2026-08-05, Version 26.7.0 (Current), @aduh95",
+      "url": "https://github.com/nodejs/node/releases/tag/v26.7.0",
+      "source": "GitHub Releases API",
+      "published": "2026-08-05T16:25:04Z",
+      "summary": "### Notable Changes * \\[[`58717685a1`](https://github.com/nodejs/node/commit/58717685a1)] - **(SEMVER-MINOR)** **crypto**: support loading private keys through STORE loaders (Filip Skokan) [#63949](https://github.com/nodejs/node/pull/63949) * \\[[`44b940ee8c`](https://github.com/nodejs/node/commit/44b940ee8c)] - **cryp...",
+      "metric": "v26.7.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "microsoft/playwright release: v1.62.1",
+      "url": "https://github.com/microsoft/playwright/releases/tag/v1.62.1",
+      "source": "GitHub Releases API",
+      "published": "2026-07-30T16:35:55Z",
+      "summary": "### Bug Fixes - #41989 [Regression]: tsconfig \"extends\" bare specifier isn't resolved via node_modules walk-up like tsc (fatal since 1.62) - #41998 [Regression]: directory-form tsconfig project references (\"path\": \"../pkg\") fail to resolve (fatal since 1.62) - #41985 Accessibility snapshot drops button name when text...",
+      "metric": "v1.62.1",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "facebook/react release: 19.2.8 (July 21st, 2026)",
+      "url": "https://github.com/react/react/releases/tag/v19.2.8",
+      "source": "GitHub Releases API",
+      "published": "2026-07-21T15:49:09Z",
+      "summary": "## React Server Components - Performance improvements when decoding ([#37087](https://github.com/facebook/react/pull/37087) by @eps1lon)",
+      "metric": "v19.2.8",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "pytorch/pytorch release: PyTorch 2.13.0 Release",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.13.0",
+      "source": "GitHub Releases API",
+      "published": "2026-07-08T17:39:58Z",
+      "summary": "# PyTorch 2.13.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Dev...",
+      "metric": "v2.13.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "tensorflow/tensorflow release: TensorFlow 2.21.0",
+      "url": "https://github.com/tensorflow/tensorflow/releases/tag/v2.21.0",
+      "source": "GitHub Releases API",
+      "published": "2026-03-06T19:48:15Z",
+      "summary": "# Release 2.21.0 ## TensorFlow ### Breaking Changes * Support for Python 3.9 has been removed starting with TF 2.21. * The TensorBoard (TB) dependency has been removed starting with TF 2.21. ### Major Features and Improvements * `tf.lite` * Adds int8 and int16x8 support for SQRT operator. * Adds int16x8 support for EQ...",
+      "metric": "v2.21.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-h7p7-w5gc-xj3w: Pydantic AI: Unvalidated UploadedFile references in UI adapters allow server-side file access using the application's credentials",
+      "url": "https://github.com/advisories/GHSA-h7p7-w5gc-xj3w",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-08-13T14:16:26Z",
+      "summary": "### Summary A client that can submit message history to a Pydantic AI UI adapter can reference arbitrary files in the application's model-provider or cloud-storage account. The server forwards the reference to the model provider, which fetches it using the server's own credentials, allowing the client to read files it...",
+      "metric": "Severity: medium",
+      "score": 55.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-5pq8-3ffp-7w5m: hashi-vault-js: Vault token and secret values exposed in thrown errors",
+      "url": "https://github.com/advisories/GHSA-5pq8-3ffp-7w5m",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-08-13T14:14:32Z",
+      "summary": "## Summary Vault token and secret values are exposed in thrown errors when using `hashi-vault-js`. ## Details Every API method in `Vault.js` executes `throw parseAxiosError(err)`, which returns the raw `AxiosError` untouched. That error carries the full Axios configuration, including the `X-Vault-Token` header and the...",
+      "metric": "Severity: medium",
+      "score": 55.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-vqfp-p66c-xrp9: ep_etherpad-lite: Device-to-device author-token transfer endpoint is replayable, never expires, and exposes the cleartext author token",
+      "url": "https://github.com/advisories/GHSA-vqfp-p66c-xrp9",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-08-13T14:12:44Z",
+      "summary": "Etherpad's device-to-device author-token transfer endpoint is replayable, never expires, and exposes the cleartext author token in the GET response body ## Description Etherpad ships an endpoint pair under `/tokenTransfer` (`src/node/hooks/express/tokenTransfer.ts`) that lets a logged-in user move their HttpOnly autho...",
+      "metric": "Severity: medium",
+      "score": 55.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-2jwf-f4xq-f24h: ep_etherpad-lite: Import/export uses Math.random() for temp file paths; predictable paths on shared /tmp enable symlink-based file overwrite",
+      "url": "https://github.com/advisories/GHSA-2jwf-f4xq-f24h",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-08-13T14:11:07Z",
+      "summary": "## Description `src/node/handler/ImportHandler.ts` and `src/node/handler/ExportHandler.ts` both compute their temporary working-file paths as: ```ts const randNum = Math.floor(Math.random() * 0xFFFFFFFF); const srcFile = `${os.tmpdir()}/etherpad_export_${randNum}.html`; const destFile = `${os.tmpdir()}/etherpad_export...",
+      "metric": "Severity: medium",
+      "score": 55.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-fjgc-3mj7-8rg8: ep_etherpad-lite: Cache-poisoning Cross-site Scripting and Open Redirect via x-proxy-path Header",
+      "url": "https://github.com/advisories/GHSA-fjgc-3mj7-8rg8",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-08-13T13:46:07Z",
+      "summary": "# GHSA-03 — `x-proxy-path` header reflected into admin HTML/JS/CSS (cache-poisoning XSS) and concatenated into redirect (open-redirect) **Severity:** Medium **CVSS v3.1 vector:** `CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N` **CVSS suggested base score:** ~6.1 — Medium *(Re-validate in the first.gov calculator before...",
+      "metric": "Severity: medium",
+      "score": 55.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "StateFlow: Building, Evolving, and Accessing 3D World States for Previsualization",
+      "url": "https://arxiv.org/abs/2608.12314v1",
+      "source": "arXiv",
+      "published": "2026-08-12T17:58:07Z",
+      "summary": "Previsualization is an intermediate layer between ideas and production in film, games, architecture, and urban design. It lets creators iteratively refine scenes, actions, cameras, and spatial-temporal dynamics. Yet existing generative methods rely on simple prompts to jointly control all of these factors through one-...",
+      "metric": "Yuyang Yin, Zixiang Li, Longxuan Deng",
+      "score": 50.0,
+      "tags": [
+        "research"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "AVA-Encoder: Towards Agent-Native Video Representation Learning",
+      "url": "https://arxiv.org/abs/2608.12313v1",
+      "source": "arXiv",
+      "published": "2026-08-12T17:58:02Z",
+      "summary": "Creative agents still lack an effective way to learn from high-quality human films, limiting their ability to produce cinematic-grade videos. A key challenge is the absence of a structured video representation that is both faithful to film content and directly usable for agentic reasoning and manipulation. To address...",
+      "metric": "Chuyue Li, Jinpeng Yu, Haozhe Wang",
+      "score": 50.0,
+      "tags": [
+        "research"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "The Role Specialization Model (RSM): Coordinating LLM-Based Tools in Agentic Software Development - An Exploratory Case Study",
+      "url": "https://arxiv.org/abs/2608.12311v1",
+      "source": "arXiv",
+      "published": "2026-08-12T17:57:16Z",
+      "summary": "The integration of large language models (LLMs) into software development workflows has given rise to a paradigm known as Agentic Software Engineering (SE 3.0), in which autonomous agents manage full development life cycles under human supervision. This paper presents an exploratory case study in which three LLM-based...",
+      "metric": "Carlos Alberto Fernández-y-Fernández, Jorge R. Aguilar-Cisneros",
+      "score": 50.0,
+      "tags": [
+        "research"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation",
+      "url": "https://arxiv.org/abs/2608.12308v1",
+      "source": "arXiv",
+      "published": "2026-08-12T17:54:33Z",
+      "summary": "Aerial vision-language navigation (VLN) requires an embodied agent to integrate visual evidence over time, plan future actions, and determine when it has reached a navigation goal under partial observability. Although recent VLA models offer a promising perception-to-action paradigm, adapting them to aerial navigation...",
+      "metric": "Yan Deng, Fei Xu",
+      "score": 50.0,
+      "tags": [
+        "research"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
+      "url": "https://arxiv.org/abs/2608.12307v1",
+      "source": "arXiv",
+      "published": "2026-08-12T17:53:18Z",
+      "summary": "Recent work on distillation transfers the capabilities of large models to smaller ones often by updating the latter's parameters, through teacher forcing, on-policy distillation, and related training-time methods. In this paper, we ask whether such transfer can instead occur at test time. We study strong-to-weak scaff...",
+      "metric": "Cheng Qian, Wenting Zhao, Liangwei Yang",
+      "score": 50.0,
+      "tags": [
+        "research"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Redistribution-based Cost Inference Improves Sparse Safe Offline RL",
+      "url": "https://arxiv.org/abs/2608.12306v1",
+      "source": "arXiv",
+      "published": "2026-08-12T17:53:15Z",
+      "summary": "Safe offline RL typically assumes access to dense per-step cost annotations, but in practice supervisors provide only trajectory-level stop-feedback: a binary signal at the first unsafe transition, with no per-step attribution. We frame this as a temporal credit assignment problem and propose the Redistribution-based...",
+      "metric": "Ebenezer Gelo, Geraud Nangue Tasse, Steven James",
+      "score": 50.0,
+      "tags": [
+        "research"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Constructing Dynamic Master Logic Models as Knowledge Graphs for Complex System Diagnostics Using Retrieval-Augmented Large Language Models",
+      "url": "https://arxiv.org/abs/2608.12304v1",
+      "source": "arXiv",
+      "published": "2026-08-12T17:50:39Z",
+      "summary": "Dynamic Master Logic (DML) provides a hierarchical framework for representing system behavior by linking functional objectives to underlying structural elements. However, DML construction typically relies on expert interpretation of technical documentation, limiting scalability for complex systems. This study presents...",
+      "metric": "Saman Marandi, Yu-Shu Hu, Mohammad Modarres",
+      "score": 50.0,
+      "tags": [
+        "research"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "A Framework for Designing Reward Functions: From Objectives to Features to Human-Aligned Reward Functions",
+      "url": "https://arxiv.org/abs/2608.12302v1",
+      "source": "arXiv",
+      "published": "2026-08-12T17:46:00Z",
+      "summary": "We present a formal process to enable non-experts to instantiate and iterate on human-aligned reward functions, i.e. reward functions that adhere to a given preference ordering over trajectories. Given a task described in natural language, our process produces a linear reward function in three steps: distill the task'...",
+      "metric": "Di Yang Shi, W. Bradley Knox",
+      "score": 50.0,
+      "tags": [
+        "research"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Class Activation Mapping in Explainable Computer Vision: A Method-Centered Review of CNN, Transformer, and Foundation-Model-Era Visual Explanations",
+      "url": "https://arxiv.org/abs/2608.12299v1",
+      "source": "arXiv",
+      "published": "2026-08-12T17:45:03Z",
+      "summary": "Class activation mapping (CAM) is one of the most widely used visual explanation families in explainable artificial intelligence. Its purpose is intuitive: it converts internal model evidence into a heatmap that highlights the image regions, convolutional channels, tokens, or patches that support a target class or con...",
+      "metric": "AmirHossein Eshghi, Hamid Saadatfar, Seyyed Ali Hoseini",
+      "score": 50.0,
+      "tags": [
+        "research"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Beyond Trial-and-Error: Agentic Optimization for Image-to-Video Adherence",
+      "url": "https://arxiv.org/abs/2608.12290v1",
+      "source": "arXiv",
+      "published": "2026-08-12T17:35:16Z",
+      "summary": "Modern black-box Image-to-Video (I2V) models offer powerful capabilities in automated content creation, yet their lack of fine-grained control and reliability presents significant challenges in professional workflows. Their inherent stochasticity causes minor variations in textual prompts or hyperparameters to yield d...",
+      "metric": "Aman Tyagi, Hemanth Boinpally, Jonathan Chen",
+      "score": 50.0,
+      "tags": [
+        "research"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: google-genai 2.18.0",
+      "url": "https://pypi.org/project/google-genai/",
+      "source": "PyPI JSON API",
+      "published": "2026-08-13T00:12:52.975040+00:00",
+      "summary": "GenAI Python SDK",
+      "metric": "version 2.18.0",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Sri Lanka / CSE / Economy",
+      "title": "FX snapshot from open exchange-rate API (USD)",
+      "url": "https://open.er-api.com/v6/latest/USD",
+      "source": "ExchangeRate-API open endpoint",
+      "published": "Thu, 13 Aug 2026 00:02:31 +0000",
+      "summary": "USD/LKR: 333.969267; USD/EUR: 0.867027; USD/GBP: 0.740511; USD/JPY: 159.290909; USD/INR: 95.412039; USD/CNY: 6.756905; USD/AUD: 1.415551; USD/SGD: 1.279831",
+      "metric": "success",
+      "score": 45.0,
+      "tags": [
+        "fx",
+        "market-data"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: openai 3.0.0",
+      "url": "https://pypi.org/project/openai/",
+      "source": "PyPI JSON API",
+      "published": "2026-08-12T01:55:50.849224+00:00",
+      "summary": "The official Python library for the openai API",
+      "metric": "version 3.0.0",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: langchain 1.3.15",
+      "url": "https://pypi.org/project/langchain/",
+      "source": "PyPI JSON API",
+      "published": "2026-08-11T19:10:52.455414+00:00",
+      "summary": "Building applications with LLMs through composability",
+      "metric": "version 1.3.15",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: transformers 5.15.0",
+      "url": "https://pypi.org/project/transformers/",
+      "source": "PyPI JSON API",
+      "published": "2026-08-10T10:27:23.261978+00:00",
+      "summary": "Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+      "metric": "version 5.15.0",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: eslint 10.8.1",
+      "url": "https://www.npmjs.com/package/eslint",
+      "source": "npm Registry API",
+      "published": "2026-08-07T20:21:24.770Z",
+      "summary": "An AST-based pattern checker for JavaScript.",
+      "metric": "latest 10.8.1",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: anthropic 0.121.0",
+      "url": "https://pypi.org/project/anthropic/",
+      "source": "PyPI JSON API",
+      "published": "2026-08-07T17:11:08.508102+00:00",
+      "summary": "The official Python library for the anthropic API",
+      "metric": "version 0.121.0",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: vite 8.2.1",
+      "url": "https://www.npmjs.com/package/vite",
+      "source": "npm Registry API",
+      "published": "2026-08-06T13:47:48.588Z",
+      "summary": "Native-ESM powered web dev build tool",
+      "metric": "latest 8.2.1",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: django 6.1",
+      "url": "https://pypi.org/project/Django/",
+      "source": "PyPI JSON API",
+      "published": "2026-08-05T19:21:53.789229+00:00",
+      "summary": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+      "metric": "version 6.1",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: openai 7.4.0",
+      "url": "https://www.npmjs.com/package/openai",
+      "source": "npm Registry API",
+      "published": "2026-08-03T22:00:38.190Z",
+      "summary": "The official TypeScript library for the OpenAI API",
+      "metric": "latest 7.4.0",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: next 16.3.0",
+      "url": "https://www.npmjs.com/package/next",
+      "source": "npm Registry API",
+      "published": "2026-08-03T20:34:17.082Z",
+      "summary": "The React Framework",
+      "metric": "latest 16.3.0",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: fastapi 0.141.1",
+      "url": "https://pypi.org/project/fastapi/",
+      "source": "PyPI JSON API",
+      "published": "2026-07-29T17:18:05.568608+00:00",
+      "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+      "metric": "version 0.141.1",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: @modelcontextprotocol/sdk 1.30.0",
+      "url": "https://www.npmjs.com/package/@modelcontextprotocol/sdk",
+      "source": "npm Registry API",
+      "published": "2026-07-27T17:56:01.640Z",
+      "summary": "Model Context Protocol implementation for TypeScript",
+      "metric": "latest 1.30.0",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: pandas 3.0.5",
+      "url": "https://pypi.org/project/pandas/",
+      "source": "PyPI JSON API",
+      "published": "2026-07-22T22:19:28.819607+00:00",
+      "summary": "Powerful data structures for data analysis, time series, and statistics",
+      "metric": "version 3.0.5",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: react 19.2.8",
+      "url": "https://www.npmjs.com/package/react",
+      "source": "npm Registry API",
+      "published": "2026-07-21T15:41:28.716Z",
+      "summary": "React is a JavaScript library for building user interfaces.",
+      "metric": "latest 19.2.8",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: tailwindcss 4.3.3",
+      "url": "https://www.npmjs.com/package/tailwindcss",
+      "source": "npm Registry API",
+      "published": "2026-07-16T12:03:35.267Z",
+      "summary": "A utility-first CSS framework for rapidly building custom user interfaces.",
+      "metric": "latest 4.3.3",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: torch 2.13.0",
+      "url": "https://pypi.org/project/torch/",
+      "source": "PyPI JSON API",
+      "published": "2026-07-08T16:05:49.855735+00:00",
+      "summary": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "metric": "version 2.13.0",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: typescript 7.0.2",
+      "url": "https://www.npmjs.com/package/typescript",
+      "source": "npm Registry API",
+      "published": "2026-07-08T15:55:18.431Z",
+      "summary": "TypeScript is a language for application scale JavaScript development",
+      "metric": "latest 7.0.2",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: llama-index 0.14.23",
+      "url": "https://pypi.org/project/llama-index/",
+      "source": "PyPI JSON API",
+      "published": "2026-06-24T19:36:38.241935+00:00",
+      "summary": "Interface between LLMs and your data",
+      "metric": "version 0.14.23",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: requests 2.34.2",
+      "url": "https://pypi.org/project/requests/",
+      "source": "PyPI JSON API",
+      "published": "2026-05-14T19:25:27.735762+00:00",
+      "summary": "Python HTTP for Humans.",
+      "metric": "version 2.34.2",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: zod 4.4.3",
+      "url": "https://www.npmjs.com/package/zod",
+      "source": "npm Registry API",
+      "published": "2026-05-04T07:06:40.819Z",
+      "summary": "TypeScript-first schema declaration and validation library with static type inference",
+      "metric": "latest 4.4.3",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Global Markets",
+      "title": "Crypto price snapshot from CoinGecko",
+      "url": "https://www.coingecko.com/",
+      "source": "CoinGecko API",
+      "published": "2026-08-13T18:07:30+00:00",
+      "summary": "bitcoin - USD 63174 - LKR 21075665 - 24h -0.35%; ethereum - USD 1877.9 - LKR 626491 - 24h -0.46%; solana - USD 75.77 - LKR 25277 - 24h -0.16%; binancecoin - USD 607.62 - LKR 202709 - 24h -0.33%; ripple - USD 1.007 - LKR 335.78 - 24h -0.36%",
+      "metric": "simple price endpoint",
+      "score": 42.0,
+      "tags": [
+        "crypto",
+        "market-data"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "I Stopped Trusting AI Agents With Tools. So I Built a Gatekeeper.",
+      "url": "https://dev.to/debashish_ghosal/i-stopped-trusting-ai-agents-with-tools-so-i-built-a-gatekeeper-26fb",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T06:43:24Z",
+      "summary": "github.com/deghosal-2026/agent-tooltrust · pip install agent-tooltrust · field test report · design...",
+      "metric": "tag ai, 22 reactions, 7 comments",
+      "score": 36.0,
+      "tags": [
+        "developer-writing",
+        "ai"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "The Most Dangerous AI-Generated Code Is the Code That Passes All Tests",
+      "url": "https://dev.to/harsh2644/the-most-dangerous-ai-generated-code-is-the-code-that-passes-all-tests-10nd",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T09:26:45Z",
+      "summary": "The code compiled The tests passed The PR was green So I merged it. Days later I was looking at...",
+      "metric": "tag ai, 11 reactions, 8 comments",
+      "score": 27.0,
+      "tags": [
+        "developer-writing",
+        "ai"
+      ]
+    },
+    {
+      "section": "Sri Lanka / CSE / Economy",
+      "title": "Local operating context weather: Colombo, Sri Lanka",
+      "url": "https://open-meteo.com/",
+      "source": "Open-Meteo API",
+      "published": "2026-08-13T23:30",
+      "summary": "interval: 900 seconds; temperature_2m: 26.9 °C; precipitation: 0.0 mm; wind_speed_10m: 10.6 km/h",
+      "metric": "Colombo, Sri Lanka",
+      "score": 20.0,
+      "tags": [
+        "weather",
+        "local-context"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Show HN: Pantheon-CLI – Open-Source Python Claude Code and Smart Notebook",
+      "url": "https://github.com/aristoteleo/pantheon-cli",
+      "source": "Hacker News / Algolia",
+      "published": "2025-08-26T16:58:33Z",
+      "summary": "Hi, We’ve built Pantheon-CLI, an fully open-source project that aims to be the “Python Claude Code + Notebook” — but designed for data analysis instead of just coding. Unlike most AI coding assistants, Pantheon-CLI runs entirely on your machine (or server). No data upload required. It blends natural language and code...",
+      "metric": "6 points, 7 comments",
+      "score": 16.5,
+      "tags": [
+        "community-signal"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "My (not so pretty) journey in tech",
+      "url": "https://dev.to/ishacodes/why-i-joined-devto--5c63",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T13:10:09Z",
+      "summary": "Ever since I joined the platform, I wanted to post about a topic I was really passionate about....",
+      "metric": "tag programming, 10 reactions, 3 comments",
+      "score": 16.0,
+      "tags": [
+        "developer-writing",
+        "programming"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Show HN: i built an AI code reviewer for github (used it on itself during dev)",
+      "url": "https://codii.dev",
+      "source": "Hacker News / Algolia",
+      "published": "2025-04-19T09:42:57Z",
+      "summary": "I’ve spent the last 2.5 months building a product that runs LLM-powered code reviews on my pull requests — and I just launched it. The tool is built specifically for solo developers. You install it on your repo, trigger a scan by creating a pull request, and it leaves structured review comments using OpenAI under the...",
+      "metric": "6 points, 6 comments",
+      "score": 15.0,
+      "tags": [
+        "community-signal"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Not All AI Builders Are Doing the Same Work",
+      "url": "https://dev.to/deeheber/not-all-ai-builders-are-doing-the-same-work-31m4",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T09:12:03Z",
+      "summary": "In 2026, nearly everyone I interact with in tech wants to talk about AI. It comes up on LinkedIn, at...",
+      "metric": "tag ai, 8 reactions, 2 comments",
+      "score": 12.0,
+      "tags": [
+        "developer-writing",
+        "ai"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Do I Still Need a Monkey Patch for Gemini Live?",
+      "url": "https://dev.to/gde/do-i-still-need-a-monkey-patch-for-gemini-live-4c3e",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T01:41:40Z",
+      "summary": "No. And deleting 187 lines of it was the single biggest benefit of moving to ADK 2.x — but it was not...",
+      "metric": "tag python, 8 reactions, 1 comments",
+      "score": 10.0,
+      "tags": [
+        "developer-writing",
+        "python"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Stop Pretending To Do Domain-Driven Design",
+      "url": "https://dev.to/jamesmh/stop-pretending-to-do-domain-driven-design-2od4",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-12T19:20:00Z",
+      "summary": "It doesn’t matter how many entities, aggregates, factories, services, and repositories you have. That’s not domain-driven design.",
+      "metric": "tag programming, 6 reactions, 1 comments",
+      "score": 8.0,
+      "tags": [
+        "developer-writing",
+        "programming"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "React useElementSize Hook: Track Element Width & Height with ResizeObserver (2026)",
+      "url": "https://dev.to/childrentime/react-useelementsize-hook-track-element-width-height-with-resizeobserver-2026-2gan",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T02:15:02Z",
+      "summary": "Media queries answer one question: how big is the viewport? But your components don't live in the...",
+      "metric": "tag javascript, 7 reactions, 0 comments",
+      "score": 7.0,
+      "tags": [
+        "developer-writing",
+        "javascript"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "OpenClaw vs Hermes Agent: The Cage Match for Your Digital Soul",
+      "url": "https://dev.to/numbpill3d/openclaw-vs-hermes-agent-the-cage-match-for-your-digital-soul-4f9c",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-12T16:53:48Z",
+      "summary": "One wants to be your operating system. The other wants to become you. Let's pick a...",
+      "metric": "tag opensource, 7 reactions, 0 comments",
+      "score": 7.0,
+      "tags": [
+        "developer-writing",
+        "opensource"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Google banned our mobile AI agent app for doing what Gemini should do,but doesnt",
+      "url": "https://news.ycombinator.com/item?id=47613614",
+      "source": "Hacker News / Algolia",
+      "published": "2026-04-02T12:35:29Z",
+      "summary": "Hi HN, My brother and I built Sova AI (https://ayconic.io/sova), an Android agent that actually controls your installed apps. We were incredibly frustrated with the current state of mobile AI. Built-in assistants like Gemini are deeply integrated into the OS, yet if you ask them to \"Order an Uber to the airport\" or \"S...",
+      "metric": "4 points, 1 comments",
+      "score": 5.5,
+      "tags": [
+        "community-signal"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Encode, don't stringify - how JSON.stringify lies to you",
+      "url": "https://dev.to/dzakh/encode-dont-stringify-how-jsonstringify-lies-to-you-38fk",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T09:26:54Z",
+      "summary": "Corrupted data, crashes, undefined for a string type. There are zero reasons to keep using it.",
+      "metric": "tag javascript, 5 reactions, 0 comments",
+      "score": 5.0,
+      "tags": [
+        "developer-writing",
+        "javascript"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "My MCP Tool's Empty-Payload Guard Checks Whether You Passed a Field. It Never Checked Whether the Field Would Actually Change Anything.",
+      "url": "https://dev.to/enjoy_kumawat/my-mcp-tools-empty-payload-guard-checks-whether-you-passed-a-field-it-never-checked-whether-the-1fi2",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T03:44:36Z",
+      "summary": "Back in early August I fixed a bug in update_article, one of the tools in this repo's DEV.to MCP...",
+      "metric": "tag python, 3 reactions, 1 comments",
+      "score": 5.0,
+      "tags": [
+        "developer-writing",
+        "python"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Show HN: QonQrete – Local-first multi-agent system for sandboxed code generation",
+      "url": "https://github.com/illdynamics/qonqrete",
+      "source": "Hacker News / Algolia",
+      "published": "2025-12-09T23:56:45Z",
+      "summary": "I’ve been working on an open-source project called QonQrete and would like feedback from HN. What it is QonQrete is a local-first, agent-based orchestration system for code generation. It coordinates multiple LLM “agents” to plan, write, and review code, while keeping execution inside a sandbox on your own infrastruct...",
+      "metric": "1 points, 2 comments",
+      "score": 4.0,
+      "tags": [
+        "community-signal"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "You Know What's Worse Than Not Being Able to Log In?",
+      "url": "https://dev.to/ujja/you-know-whats-worse-than-not-being-able-to-log-in-5379",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T12:38:44Z",
+      "summary": "This is a submission for DEV's Summer Bug Smash: Smash Stories powered by Sentry. You Know What's...",
+      "metric": "tag webdev, 3 reactions, 0 comments",
+      "score": 3.0,
+      "tags": [
+        "developer-writing",
+        "webdev"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "TypeScript Intersection Types Done Right: When They Compose Cleanly and When They Silently Lie",
+      "url": "https://dev.to/jsmanifest/typescript-intersection-types-done-right-when-they-compose-cleanly-and-when-they-silently-lie-4ed2",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T06:12:57Z",
+      "summary": "TypeScript Intersection Types Done Right: When They Compose Cleanly and When They Silently...",
+      "metric": "tag javascript, 1 reactions, 1 comments",
+      "score": 3.0,
+      "tags": [
+        "developer-writing",
+        "javascript"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Meteor pluggable DDP transport: meet uWebSockets.js",
+      "url": "https://dev.to/meteor/meteor-pluggable-ddp-transport-meet-uwebsocketsjs-514i",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-12T17:14:29Z",
+      "summary": "For thirteen years, every DDP message your Meteor app sent rode the same rails: SockJS....",
+      "metric": "tag javascript, 3 reactions, 0 comments",
+      "score": 3.0,
+      "tags": [
+        "developer-writing",
+        "javascript"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Build semantic search inside video: shot embeddings + transcript chunks, fused on the timeline",
+      "url": "https://dev.to/masonwritescode/build-semantic-search-inside-video-shot-embeddings-transcript-chunks-fused-on-the-timeline-2nbb",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T13:55:46Z",
+      "summary": "TL;DR Frame-only video search can't find \"where she explains pricing.\" Transcript-only...",
+      "metric": "tag python, 2 reactions, 0 comments",
+      "score": 2.0,
+      "tags": [
+        "developer-writing",
+        "python"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "From a half-finished training run to a reproducible eval",
+      "url": "https://dev.to/hammertoe/from-a-half-finished-training-run-to-a-reproducible-eval-1k78",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-12T16:17:11Z",
+      "summary": "So our last training pass on Qwen3-Omni-30B-A3B-Instruct — fine-tuning it on Barbados newspapers —...",
+      "metric": "tag machinelearning, 0 reactions, 1 comments",
+      "score": 2.0,
+      "tags": [
+        "developer-writing",
+        "machinelearning"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "I built an Open Source Linux cleaner because I couldn't find one I wanted to use",
+      "url": "https://dev.to/debba/i-built-an-open-source-linux-cleaner-because-i-couldnt-find-one-i-wanted-to-use-1041",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T08:01:51Z",
+      "summary": "Recently I started building something called TuxCleaner, a safety-first cleanup and disk analysis...",
+      "metric": "tag opensource, 1 reactions, 0 comments",
+      "score": 1.0,
+      "tags": [
+        "developer-writing",
+        "opensource"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "When your benchmark is wrong and your model is right",
+      "url": "https://dev.to/hammertoe/when-your-benchmark-is-wrong-and-your-model-is-right-p74",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-12T15:39:03Z",
+      "summary": "When your benchmark is wrong and your model is right We fine-tuned a 30-billion-parameter model on...",
+      "metric": "tag machinelearning, 1 reactions, 0 comments",
+      "score": 1.0,
+      "tags": [
+        "developer-writing",
+        "machinelearning"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Apache Data Lakehouse Weekly: August 5 - August 12, 2026",
+      "url": "https://dev.to/alexmercedcoder/apache-data-lakehouse-weekly-august-5-august-12-2026-2j40",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-13T13:11:40Z",
+      "summary": "This Week at a Glance The Iceberg community opened a formal scoping discussion for the v4...",
+      "metric": "tag opensource, 0 reactions, 0 comments",
+      "score": 0.0,
+      "tags": [
+        "developer-writing",
+        "opensource"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Java Collections Framework: When to Use What – The Fellowship of the List",
+      "url": "https://dev.to/timevolt/java-collections-framework-when-to-use-what-the-fellowship-of-the-list-f5e",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-12T23:58:45Z",
+      "summary": "The Quest Begins (The \"Why\") I was knee‑deep in a legacy codebase the other day, trying to...",
+      "metric": "tag python, 0 reactions, 0 comments",
+      "score": 0.0,
+      "tags": [
+        "developer-writing",
+        "python"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyTorch Autograd Explained: What .backward() Actually Does",
+      "url": "https://dev.to/pytorchfromgroundup/pytorch-autograd-explained-what-backward-actually-does-4acg",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-12T20:50:08Z",
+      "summary": "most autograd tutorials show you requires_grad, then .backward(), then .grad, and then they hand you...",
+      "metric": "tag machinelearning, 0 reactions, 0 comments",
+      "score": 0.0,
+      "tags": [
+        "developer-writing",
+        "machinelearning"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Your AI's entire memory, as one encrypted file you own",
+      "url": "https://dev.to/wrencalloway/your-ais-entire-memory-as-one-encrypted-file-you-own-die",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-08-12T12:05:01Z",
+      "summary": "Every \"give your agent long-term memory\" product I've looked at solves the problem the same way: your...",
+      "metric": "tag machinelearning, 0 reactions, 0 comments",
+      "score": 0.0,
+      "tags": [
+        "developer-writing",
+        "machinelearning"
+      ]
+    }
+  ]
+}
