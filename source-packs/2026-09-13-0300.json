@@ -1,0 +1,1262 @@
+{
+  "label": "2026-09-13-0300",
+  "report_kind": "hourly",
+  "generated_at_utc": "2026-09-12T22:19:01.954303+00:00",
+  "item_count": 85,
+  "failures": [
+    "arXiv AI research feed: HTTPError: HTTP Error 429: Unknown Error",
+    "GDELT news discovery: HTTPError: HTTP Error 429: Too Many Requests",
+    "Stack Overflow hot questions: HTTPError: HTTP Error 400: Bad Request",
+    "Official and engineering RSS feeds: HTTPError: HTTP Error 404: Not Found",
+    "Stooq global market snapshot: HTTPError: HTTP Error 404: Not Found"
+  ],
+  "diagnostics": {
+    "Hacker News Algolia - AI and dev signals": {
+      "status": "ok",
+      "seconds": 0.6,
+      "items": 6
+    },
+    "arXiv AI research feed": {
+      "status": "failed"
+    },
+    "GitHub new AI repositories": {
+      "status": "ok",
+      "seconds": 0.41,
+      "items": 8
+    },
+    "GitHub new agent repositories": {
+      "status": "ok",
+      "seconds": 0.39,
+      "items": 8
+    },
+    "GitHub major release monitor": {
+      "status": "ok",
+      "seconds": 3.45,
+      "items": 11
+    },
+    "GitHub security advisories": {
+      "status": "ok",
+      "seconds": 0.26,
+      "items": 8
+    },
+    "GDELT news discovery": {
+      "status": "failed"
+    },
+    "DEV/Forem articles": {
+      "status": "ok",
+      "seconds": 1.36,
+      "items": 28
+    },
+    "Stack Overflow hot questions": {
+      "status": "failed"
+    },
+    "Official and engineering RSS feeds": {
+      "status": "failed"
+    },
+    "PyPI package monitor": {
+      "status": "ok",
+      "seconds": 0.63,
+      "items": 11
+    },
+    "npm package monitor": {
+      "status": "ok",
+      "seconds": 1.95,
+      "items": 9
+    },
+    "CISA Known Exploited Vulnerabilities": {
+      "status": "ok",
+      "seconds": 0.17,
+      "items": 8
+    },
+    "Open exchange-rate snapshot": {
+      "status": "ok",
+      "seconds": 0.06,
+      "items": 1
+    },
+    "CoinGecko crypto snapshot": {
+      "status": "ok",
+      "seconds": 0.16,
+      "items": 1
+    },
+    "Stooq global market snapshot": {
+      "status": "failed"
+    },
+    "Open-Meteo Colombo context": {
+      "status": "ok",
+      "seconds": 0.19,
+      "items": 1
+    }
+  },
+  "items": [
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Nanako0129/sepia",
+      "url": "https://github.com/Nanako0129/sepia",
+      "source": "GitHub Search API",
+      "published": "2026-08-28T05:56:49Z",
+      "summary": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
+      "metric": "2569 stars, 165 forks",
+      "score": 2899.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Player-YN/PawWork_ZhuaZhua",
+      "url": "https://github.com/Player-YN/PawWork_ZhuaZhua",
+      "source": "GitHub Search API",
+      "published": "2026-08-28T10:56:56Z",
+      "summary": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
+      "metric": "2591 stars, 7 forks",
+      "score": 2605.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "2akouwu/reverify",
+      "url": "https://github.com/2akouwu/reverify",
+      "source": "GitHub Search API",
+      "published": "2026-08-31T01:02:18Z",
+      "summary": "Stop your AI from making things up — it proposes, deterministic tools decide, every claim checked against ground truth with evidence. Grounded facts and context survive resets. Reverse engineering is the proving ground. MCP server + CLI.",
+      "metric": "1178 stars, 233 forks",
+      "score": 1644.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "tigerless-labs/agent-memory",
+      "url": "https://github.com/tigerless-labs/agent-memory",
+      "source": "GitHub Search API",
+      "published": "2026-09-01T21:52:29Z",
+      "summary": "Long-term memory runtime for AI agents — plain Markdown as the source of truth, local ranked retrieval, and an independent sleep-time Manage layer. Claude Code and Codex share one store. No API key.",
+      "metric": "1162 stars, 67 forks",
+      "score": 1296.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Human-Agent-Society/reef",
+      "url": "https://github.com/Human-Agent-Society/reef",
+      "source": "GitHub Search API",
+      "published": "2026-08-31T01:39:18Z",
+      "summary": "Continual learning infra for self-improving agents",
+      "metric": "1113 stars, 69 forks",
+      "score": 1251.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "hkqr/my-free-code",
+      "url": "https://github.com/hkqr/my-free-code",
+      "source": "GitHub Search API",
+      "published": "2026-08-27T17:59:23Z",
+      "summary": "Open-source multi-provider AI gateway for Claude Code and other coding agents, with model routing, streaming, tools, reasoning, fallbacks, and local model support",
+      "metric": "634 stars, 211 forks",
+      "score": 1056.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "crwdla/tokentab",
+      "url": "https://github.com/crwdla/tokentab",
+      "source": "GitHub Search API",
+      "published": "2026-09-07T17:18:31Z",
+      "summary": "A CLI that reads Claude Code, Codex, and Gemini CLI session logs and works out how much they cost, by model, project, and day.",
+      "metric": "542 stars, 205 forks",
+      "score": 952.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "datawhalechina/zero-to-sglang",
+      "url": "https://github.com/datawhalechina/zero-to-sglang",
+      "source": "GitHub Search API",
+      "published": "2026-08-27T02:24:12Z",
+      "summary": "Official SGLang × Datawhale course on LLM inference (中英双语): understand inference, build a mini-sglang from scratch, then read the real SGLang source and land your first PR. 《从零手搓SGLang》：读懂推理，手搓 mini-sglang，吃透 SGLang 源码。",
+      "metric": "804 stars, 66 forks",
+      "score": 936.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Colafornia/short-video-generator-AI",
+      "url": "https://github.com/Colafornia/short-video-generator-AI",
+      "source": "GitHub Search API",
+      "published": "2026-09-08T14:55:47Z",
+      "summary": "Free open-source project designed for turning youtube-viedos into viral short videos. Highlight detection, subtitles, translation, voiceover, all in one for your content.",
+      "metric": "624 stars, 111 forks",
+      "score": 846.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "rome-os/rome",
+      "url": "https://github.com/rome-os/rome",
+      "source": "GitHub Search API",
+      "published": "2026-08-23T06:15:15Z",
+      "summary": "A compounding agent OS for recursive agents. Also an open source alternative to Grok Bot and Meta's Muse.",
+      "metric": "492 stars, 37 forks",
+      "score": 566.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "OnlyTerp/opengrok",
+      "url": "https://github.com/OnlyTerp/opengrok",
+      "source": "GitHub Search API",
+      "published": "2026-08-27T18:30:44Z",
+      "summary": "Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming you.",
+      "metric": "443 stars, 54 forks",
+      "score": 551.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "source": "Hacker News / Algolia",
+      "published": "2026-07-12T18:28:15Z",
+      "summary": "Hello HN, I don't post on here much, but wanted to get some eyes on a new project I'm just launching. I think we definitely need one more AI code agent.. I'm a long-term C++ dev, and over 30+ years I've created some successful audio dev tools (JUCE, the Tracktion DAW, the Cmajor DSP language). All of these came from m...",
+      "metric": "280 points, 119 comments",
+      "score": 458.5,
+      "tags": [
+        "community-signal"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "useagenthq/useagent",
+      "url": "https://github.com/useagenthq/useagent",
+      "source": "GitHub Search API",
+      "published": "2026-08-29T21:14:31Z",
+      "summary": "The open-source AI coworker for your team: agents with their own cloud computer, your tools and context, handing back finished work websites, decks, spreadsheets, reports, PRs. Runs Claude Code, Codex, OpenCode on your subscription.",
+      "metric": "304 stars, 58 forks",
+      "score": 420.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "unstablebuild/rune",
+      "url": "https://github.com/unstablebuild/rune",
+      "source": "GitHub Search API",
+      "published": "2026-09-10T10:50:03Z",
+      "summary": "the development environment for pros",
+      "metric": "378 stars, 20 forks",
+      "score": 418.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Merit-Systems/OpenInstinct",
+      "url": "https://github.com/Merit-Systems/OpenInstinct",
+      "source": "GitHub Search API",
+      "published": "2026-08-25T14:42:47Z",
+      "summary": "iMessage personal assistant + password vault",
+      "metric": "311 stars, 47 forks",
+      "score": 405.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "yudaprasetya007/routeVSCODE",
+      "url": "https://github.com/yudaprasetya007/routeVSCODE",
+      "source": "GitHub Search API",
+      "published": "2026-09-10T01:25:00Z",
+      "summary": "⚡ Zero-reload dynamic AI model switcher & local proxy for VSCode Copilot Chat via 9Router",
+      "metric": "327 stars, 0 forks",
+      "score": 327.0,
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-325j-mg25-8q58: yayson: Prototype pollution in Store/LegacyStore deserialization",
+      "url": "https://github.com/advisories/GHSA-325j-mg25-8q58",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-09-11T22:11:38Z",
+      "summary": "# Summary `Store`/`LegacyStore` key internal lookup tables by the `type`, `id`, and relationship names from a JSON:API document. Because these were plain objects, a document with `type: \"__proto__\"` writes onto `Object.prototype`, polluting every object in the process. # Severity Suggested CVSS v3.1 `AV:N/AC:L/PR:N/UI...",
+      "metric": "Severity: critical",
+      "score": 90.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-h8m9-jgf8-vwvp: Prowler: SAML Domain Claiming Enables Cross-Tenant Account Takeover",
+      "url": "https://github.com/advisories/GHSA-h8m9-jgf8-vwvp",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-09-11T21:38:24Z",
+      "summary": "## SAML Tenant Binding Enables Cross-Tenant Account Takeover ### Summary Prowler's SAML authentication flow trusted the email domain asserted in a SAMLResponse when deciding which tenant should receive the final token. A malicious tenant with its own SAML configuration and a self-controlled IdP could complete a valid...",
+      "metric": "Severity: critical",
+      "score": 90.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "CISA KEV: CVE-2026-84869 affecting ConnectWise ScreenConnect",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "source": "CISA KEV JSON catalog",
+      "published": "2026-09-11",
+      "summary": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sessions without authorization or host confirmation.",
+      "metric": "Due: 2026-09-14",
+      "score": 85.0,
+      "tags": [
+        "security",
+        "vulnerability"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-rqx4-3f6q-3x2v: @Mockoon/commons-server: Unauthenticated admin API + wildcard CORS allows mock-state hijack and secret theft",
+      "url": "https://github.com/advisories/GHSA-rqx4-3f6q-3x2v",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-09-11T22:04:42Z",
+      "summary": "## Summary Mockoon's admin API ([`commons-server/src/libs/server/admin-api.ts`](https://github.com/mockoon/mockoon/blob/4375a8f/packages/commons-server/src/libs/server/admin-api.ts)) is mounted on the same Express listener as the user-defined mock routes, **enabled by default** in every shipped runtime (commons-server...",
+      "metric": "Severity: high",
+      "score": 75.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-65h7-9wrw-629c: FrontMCP and mcp-from-openapi have bypass of OpenAPI external $ref SSRF fix",
+      "url": "https://github.com/advisories/GHSA-65h7-9wrw-629c",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-09-11T22:02:04Z",
+      "summary": "## Summary The published fix for GHSA-v6ph-xcq9-qxxj / CVE-2026-39885 added a direct hostname denylist for OpenAPI external `$ref` dereferencing, but the latest patched dependency `mcp-from-openapi` 2.3.0 still makes backend-origin requests to loopback when the target is reached through hostname resolution, redirects,...",
+      "metric": "Severity: high",
+      "score": 75.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-2cg9-97gq-9mqp: Shopper: Missing authorization on product removal actions in CollectionProducts component",
+      "url": "https://github.com/advisories/GHSA-2cg9-97gq-9mqp",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-09-11T21:31:26Z",
+      "summary": "## Title Missing authorization on product removal actions in CollectionProducts component ## Description A lack of authorization control was discovered on both the per-record delete action and the bulk delete action inside `packages/admin/src/Livewire/Components/Collection/CollectionProducts.php`. Neither the `Action:...",
+      "metric": "Severity: high",
+      "score": 75.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "vercel/next.js release: v16.4.0-canary.27",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.0-canary.27",
+      "source": "GitHub Releases API",
+      "published": "2026-09-11T23:43:04Z",
+      "summary": "### Misc Changes - Durable use cache: optimize env var existence checks: #98504 - Adds this.mode for webpack loaders: #98532 - Upgrade React from `6c0e1047-20260908` to `019019be-20260911`: #98576 - feat(next/image): Add experimental imgOptMozjpeg config: #98571 - [turbopack] Lazily compile dynamic imports in developm...",
+      "metric": "v16.4.0-canary.27",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "langchain-ai/langchain release: langchain-core==1.6.3",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.3",
+      "source": "GitHub Releases API",
+      "published": "2026-09-11T17:38:02Z",
+      "summary": "Changes since langchain-core==1.6.2 release(core): 1.6.3 (#40407) feat(core): Allow model name and provider tracing metadata override based on gateway response (#40406) test(core): cover the deprecated `.text()` access path (#40243) docs(core): remove stale Args/Raises entries from FileCallbackHandler._write and ChatG...",
+      "metric": "langchain-core==1.6.3",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "openai/openai-python release: v3.13.0",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.13.0",
+      "source": "GitHub Releases API",
+      "published": "2026-09-10T19:37:39Z",
+      "summary": "## [3.13.0](https://github.com/openai/openai-python/compare/v3.12.0...v3.13.0) (2026-09-10) ### Features * **api:** add Agents API ([1c4284a](https://github.com/openai/openai-python/commit/1c4284a08294f734d57047585ab82e2e09d3a5bc))",
+      "metric": "v3.13.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "facebook/react release: 19.3.0 (September 9, 2026)",
+      "url": "https://github.com/react/react/releases/tag/v19.3.0",
+      "source": "GitHub Releases API",
+      "published": "2026-09-09T18:01:33Z",
+      "summary": "Below is a list of all new features, APIs, and bug fixes. Read the [React 19.3 release post](https://react.dev/blog/2026/09/09/react-19-3) for more information. ## New React Features - ` `: Adds ` ` and `addTransitionType` APIs to power View Transition animations in React (@sebmarkbage, @jackpope, @gaearon: [#31975](h...",
+      "metric": "v19.3.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "nodejs/node release: 2026-09-09, Version 26.8.2 (Current), @aduh95",
+      "url": "https://github.com/nodejs/node/releases/tag/v26.8.2",
+      "source": "GitHub Releases API",
+      "published": "2026-09-09T16:07:48Z",
+      "summary": "### Notable Changes * \\[[`616bd3fa26`](https://github.com/nodejs/node/commit/616bd3fa26)] - **doc**: deprecate `Server.prototype._listen2` in `node:net` (Antoine du Hamel) [#65593](https://github.com/nodejs/node/pull/65593) * \\[[`ae1801eb55`](https://github.com/nodejs/node/commit/ae1801eb55)] - **meta**: refine the se...",
+      "metric": "v26.8.2",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "huggingface/transformers release: Release 5.17.0",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.17.0",
+      "source": "GitHub Releases API",
+      "published": "2026-09-09T15:42:45Z",
+      "summary": "# Release v5.17.0 ## New Model additions ### HYV4 Hy4-Preview is a 780B-parameter mixture-of-experts language model that activates 49B parameters per token. Each MoE layer holds 256 routed experts plus one always-active shared expert and routes every token to 8 of them. The context window is 1M tokens. The architectur...",
+      "metric": "v5.17.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "microsoft/vscode release: 1.137.0",
+      "url": "https://github.com/microsoft/vscode/releases/tag/1.137.0",
+      "source": "GitHub Releases API",
+      "published": "2026-09-09T15:32:58Z",
+      "summary": "https://code.visualstudio.com/updates/v1_137",
+      "metric": "1.137.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "ollama/ollama release: v0.34.0",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.34.0",
+      "source": "GitHub Releases API",
+      "published": "2026-09-05T23:49:00Z",
+      "summary": "## Use Ollama models in ChatGPT Desktop Ollama models can now be used directly in ChatGPT Desktop, so you can keep your existing workflow while running open models. Setup is available from the Ollama app on MacOS. This release also improves structured output performance on Apple Silicon, adds support for OpenAI-compat...",
+      "metric": "v0.34.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "microsoft/playwright release: v1.63.0",
+      "url": "https://github.com/microsoft/playwright/releases/tag/v1.63.0",
+      "source": "GitHub Releases API",
+      "published": "2026-09-04T22:40:31Z",
+      "summary": "## 🔒 Test locks Tests that access a shared resource — an external service, a global account setting — can now declare a named `lock`. Tests that share a lock name never run concurrently, across files, workers and [projects](https://playwright.dev/docs/test-projects), while everything else keeps running in parallel: ``...",
+      "metric": "v1.63.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "pytorch/pytorch release: PyTorch 2.14.0 Release",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.14.0",
+      "source": "GitHub Releases API",
+      "published": "2026-09-02T17:40:10Z",
+      "summary": "# PyTorch 2.14.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Sec...",
+      "metric": "v2.14.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "tensorflow/tensorflow release: TensorFlow 2.21.0",
+      "url": "https://github.com/tensorflow/tensorflow/releases/tag/v2.21.0",
+      "source": "GitHub Releases API",
+      "published": "2026-03-06T19:48:15Z",
+      "summary": "# Release 2.21.0 ## TensorFlow ### Breaking Changes * Support for Python 3.9 has been removed starting with TF 2.21. * The TensorBoard (TB) dependency has been removed starting with TF 2.21. ### Major Features and Improvements * `tf.lite` * Adds int8 and int16x8 support for SQRT operator. * Adds int16x8 support for EQ...",
+      "metric": "v2.21.0",
+      "score": 60.0,
+      "tags": [
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-992q-9gwp-7r79: ZITADEL: Auto-linking by email: IdP-side email verification is not checked",
+      "url": "https://github.com/advisories/GHSA-992q-9gwp-7r79",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-09-11T22:13:21Z",
+      "summary": "### Summary A flaw in the external identity provider handler allows unauthorized account linking to occur under specific administrative configurations. When auto-linking by email is enabled, ZITADEL checks that the local user's email is verified, but does not explicitly cross-check whether the incoming external identi...",
+      "metric": "Severity: medium",
+      "score": 55.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-8wqc-v2q8-vff2: @Mockoon/commons-server: Path traversal in templated `filePath` lets a request escape the served directory (prefix-only base check)",
+      "url": "https://github.com/advisories/GHSA-8wqc-v2q8-vff2",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-09-11T22:04:32Z",
+      "summary": "## Summary A `FILE` response whose `filePath` embeds request data (e.g. `\"/srv/public/{{queryParam 'name'}}\"`, the documented way to let the client pick a file) is confined by `getSafeFilePath` with `resolvedPath.startsWith(staticBaseDir)`. That prefix test has no path-separator boundary, so a `../`-escaped path whose...",
+      "metric": "Severity: medium",
+      "score": 55.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "GHSA-v77h-2w3m-94hx: ZITADEL: Missing Token Expiration (`exp`) Validation in JWT IdP Provider",
+      "url": "https://github.com/advisories/GHSA-v77h-2w3m-94hx",
+      "source": "GitHub Security Advisories API",
+      "published": "2026-09-11T21:32:14Z",
+      "summary": "### Summary A token lifecycle validation vulnerability was discovered in ZITADEL's external JWT Identity Provider (IdP) implementation Specifically, within the validation pipeline, if an incoming JWT omits the `exp` claim entirely, the expiration block is silently skipped rather than rejected. The token is treated as...",
+      "metric": "Severity: medium",
+      "score": 55.0,
+      "tags": [
+        "security",
+        "dependency-risk"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "I'm 12. This morning I fought two hosting providers. My app survived both.",
+      "url": "https://dev.to/koda2026/im-12-this-morning-i-fought-two-hosting-providers-my-app-survived-both-5bo6",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T04:35:24Z",
+      "summary": "It's Saturday, 8 AM. Day 1 of my KODA Online Fest. I wake up, grab my POCO C55, open Netlify to...",
+      "metric": "tag webdev, 23 reactions, 13 comments",
+      "score": 49.0,
+      "tags": [
+        "developer-writing",
+        "webdev"
+      ]
+    },
+    {
+      "section": "Sri Lanka / CSE / Economy",
+      "title": "FX snapshot from open exchange-rate API (USD)",
+      "url": "https://open.er-api.com/v6/latest/USD",
+      "source": "ExchangeRate-API open endpoint",
+      "published": "Sat, 12 Sep 2026 00:02:31 +0000",
+      "summary": "USD/LKR: 328.251404; USD/EUR: 0.862019; USD/GBP: 0.739517; USD/JPY: 153.7596; USD/INR: 95.601765; USD/CNY: 6.725314; USD/AUD: 1.394712; USD/SGD: 1.267129",
+      "metric": "success",
+      "score": 45.0,
+      "tags": [
+        "fx",
+        "market-data"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: next 16.3.5",
+      "url": "https://www.npmjs.com/package/next",
+      "source": "npm Registry API",
+      "published": "2026-09-11T17:26:46.049Z",
+      "summary": "The React Framework",
+      "metric": "latest 16.3.5",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: google-genai 2.23.0",
+      "url": "https://pypi.org/project/google-genai/",
+      "source": "PyPI JSON API",
+      "published": "2026-09-10T22:55:31.120927+00:00",
+      "summary": "GenAI Python SDK",
+      "metric": "version 2.23.0",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: zod 4.6.2",
+      "url": "https://www.npmjs.com/package/zod",
+      "source": "npm Registry API",
+      "published": "2026-09-10T21:44:31.022Z",
+      "summary": "TypeScript-first schema declaration and validation library with static type inference",
+      "metric": "latest 4.6.2",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: openai 7.15.0",
+      "url": "https://www.npmjs.com/package/openai",
+      "source": "npm Registry API",
+      "published": "2026-09-10T19:46:30.991Z",
+      "summary": "The official TypeScript library for the OpenAI API",
+      "metric": "latest 7.15.0",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: openai 3.13.0",
+      "url": "https://pypi.org/project/openai/",
+      "source": "PyPI JSON API",
+      "published": "2026-09-10T19:38:27.597528+00:00",
+      "summary": "The official Python library for the openai API",
+      "metric": "version 3.13.0",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: anthropic 1.5.0",
+      "url": "https://pypi.org/project/anthropic/",
+      "source": "PyPI JSON API",
+      "published": "2026-09-10T17:45:35.930120+00:00",
+      "summary": "The official Python library for the anthropic API",
+      "metric": "version 1.5.0",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: vite 8.3.0",
+      "url": "https://www.npmjs.com/package/vite",
+      "source": "npm Registry API",
+      "published": "2026-09-10T11:30:26.283Z",
+      "summary": "Native-ESM powered web dev build tool",
+      "metric": "latest 8.3.0",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: react 19.3.0",
+      "url": "https://www.npmjs.com/package/react",
+      "source": "npm Registry API",
+      "published": "2026-09-09T17:21:30.071Z",
+      "summary": "React is a JavaScript library for building user interfaces.",
+      "metric": "latest 19.3.0",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: transformers 5.17.0",
+      "url": "https://pypi.org/project/transformers/",
+      "source": "PyPI JSON API",
+      "published": "2026-09-09T15:39:56.886404+00:00",
+      "summary": "Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+      "metric": "version 5.17.0",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: eslint 10.10.0",
+      "url": "https://www.npmjs.com/package/eslint",
+      "source": "npm Registry API",
+      "published": "2026-09-04T14:34:21.799Z",
+      "summary": "An AST-based pattern checker for JavaScript.",
+      "metric": "latest 10.10.0",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: langchain 1.4.0",
+      "url": "https://pypi.org/project/langchain/",
+      "source": "PyPI JSON API",
+      "published": "2026-09-03T16:59:32.442684+00:00",
+      "summary": "Building applications with LLMs through composability",
+      "metric": "version 1.4.0",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: django 6.1.1",
+      "url": "https://pypi.org/project/Django/",
+      "source": "PyPI JSON API",
+      "published": "2026-09-02T17:20:45.621516+00:00",
+      "summary": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+      "metric": "version 6.1.1",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: torch 2.14.0",
+      "url": "https://pypi.org/project/torch/",
+      "source": "PyPI JSON API",
+      "published": "2026-09-02T13:46:34.818476+00:00",
+      "summary": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "metric": "version 2.14.0",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: llama-index 0.14.24",
+      "url": "https://pypi.org/project/llama-index/",
+      "source": "PyPI JSON API",
+      "published": "2026-08-19T18:47:58.997231+00:00",
+      "summary": "Interface between LLMs and your data",
+      "metric": "version 0.14.24",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: fastapi 0.141.1",
+      "url": "https://pypi.org/project/fastapi/",
+      "source": "PyPI JSON API",
+      "published": "2026-07-29T17:18:05.568608+00:00",
+      "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+      "metric": "version 0.141.1",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: @modelcontextprotocol/sdk 1.30.0",
+      "url": "https://www.npmjs.com/package/@modelcontextprotocol/sdk",
+      "source": "npm Registry API",
+      "published": "2026-07-27T17:56:01.640Z",
+      "summary": "Model Context Protocol implementation for TypeScript",
+      "metric": "latest 1.30.0",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: pandas 3.0.5",
+      "url": "https://pypi.org/project/pandas/",
+      "source": "PyPI JSON API",
+      "published": "2026-07-22T22:19:28.819607+00:00",
+      "summary": "Powerful data structures for data analysis, time series, and statistics",
+      "metric": "version 3.0.5",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: tailwindcss 4.3.3",
+      "url": "https://www.npmjs.com/package/tailwindcss",
+      "source": "npm Registry API",
+      "published": "2026-07-16T12:03:35.267Z",
+      "summary": "A utility-first CSS framework for rapidly building custom user interfaces.",
+      "metric": "latest 4.3.3",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "npm package update: typescript 7.0.2",
+      "url": "https://www.npmjs.com/package/typescript",
+      "source": "npm Registry API",
+      "published": "2026-07-08T15:55:18.431Z",
+      "summary": "TypeScript is a language for application scale JavaScript development",
+      "metric": "latest 7.0.2",
+      "score": 45.0,
+      "tags": [
+        "javascript",
+        "package"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "PyPI package update: requests 2.34.2",
+      "url": "https://pypi.org/project/requests/",
+      "source": "PyPI JSON API",
+      "published": "2026-05-14T19:25:27.735762+00:00",
+      "summary": "Python HTTP for Humans.",
+      "metric": "version 2.34.2",
+      "score": 45.0,
+      "tags": [
+        "python",
+        "package"
+      ]
+    },
+    {
+      "section": "Global Markets",
+      "title": "Crypto price snapshot from CoinGecko",
+      "url": "https://www.coingecko.com/",
+      "source": "CoinGecko API",
+      "published": "2026-09-12T22:17:40+00:00",
+      "summary": "bitcoin - USD 77235 - LKR 25355877 - 24h 0.11%; ethereum - USD 2522.31 - LKR 828061 - 24h 0.12%; solana - USD 101.61 - LKR 33358 - 24h -0.40%; binancecoin - USD 726.13 - LKR 238384 - 24h 0.30%; ripple - USD 1.36 - LKR 447.69 - 24h 0.69%",
+      "metric": "simple price endpoint",
+      "score": 42.0,
+      "tags": [
+        "crypto",
+        "market-data"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "I read 500 'AI will replace developers' posts. They all make the same 3 mistakes.",
+      "url": "https://dev.to/infoinlet1/i-read-500-ai-will-replace-developers-posts-they-all-make-the-same-3-mistakes-3819",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T05:51:11Z",
+      "summary": "Last month I spent 30 days letting AI write 100% of my code — a real SaaS, in production, no line of...",
+      "metric": "tag ai, 19 reactions, 5 comments",
+      "score": 29.0,
+      "tags": [
+        "developer-writing",
+        "ai"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "I just did something my AI agents couldn't",
+      "url": "https://dev.to/effessdev/i-just-did-something-my-ai-agents-couldnt-pmi",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T04:30:19Z",
+      "summary": "It is funny how things work out. You can let AI tools try to fix a code problem for days, but nothing...",
+      "metric": "tag ai, 12 reactions, 7 comments",
+      "score": 26.0,
+      "tags": [
+        "developer-writing",
+        "ai"
+      ]
+    },
+    {
+      "section": "Sri Lanka / CSE / Economy",
+      "title": "Local operating context weather: Colombo, Sri Lanka",
+      "url": "https://open-meteo.com/",
+      "source": "Open-Meteo API",
+      "published": "2026-09-13T03:45",
+      "summary": "interval: 900 seconds; temperature_2m: 25.0 °C; precipitation: 0.2 mm; wind_speed_10m: 4.6 km/h",
+      "metric": "Colombo, Sri Lanka",
+      "score": 20.0,
+      "tags": [
+        "weather",
+        "local-context"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "I Optimized My Bump Version Tool and Made It 1,000,000x Faster Than Its Python Counterparts.",
+      "url": "https://dev.to/wiseai/i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts-2i83",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-11T22:15:08Z",
+      "summary": "Hello again, fellow Rustaceans, Pythonistas in denial, and the three people on earth who genuinely...",
+      "metric": "tag javascript, 11 reactions, 3 comments",
+      "score": 17.0,
+      "tags": [
+        "developer-writing",
+        "javascript"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Show HN: Pantheon-CLI – Open-Source Python Claude Code and Smart Notebook",
+      "url": "https://github.com/aristoteleo/pantheon-cli",
+      "source": "Hacker News / Algolia",
+      "published": "2025-08-26T16:58:33Z",
+      "summary": "Hi, We’ve built Pantheon-CLI, an fully open-source project that aims to be the “Python Claude Code + Notebook” — but designed for data analysis instead of just coding. Unlike most AI coding assistants, Pantheon-CLI runs entirely on your machine (or server). No data upload required. It blends natural language and code...",
+      "metric": "6 points, 7 comments",
+      "score": 16.5,
+      "tags": [
+        "community-signal"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Show HN: i built an AI code reviewer for github (used it on itself during dev)",
+      "url": "https://codii.dev",
+      "source": "Hacker News / Algolia",
+      "published": "2025-04-19T09:42:57Z",
+      "summary": "I’ve spent the last 2.5 months building a product that runs LLM-powered code reviews on my pull requests — and I just launched it. The tool is built specifically for solo developers. You install it on your repo, trigger a scan by creating a pull request, and it leaves structured review comments using OpenAI under the...",
+      "metric": "6 points, 6 comments",
+      "score": 15.0,
+      "tags": [
+        "community-signal"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Same Video File, Same Threshold, Three Answers: Caption Safe-Zone Frames Are Matched by Grid, Not by Count",
+      "url": "https://dev.to/hexisteme/same-video-file-same-threshold-three-answers-caption-safe-zone-frames-are-matched-by-grid-not-2dnd",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T00:00:06Z",
+      "summary": "A caption safe-zone check failed a clean video clip, and re-running the identical check three different ways produced three different answers on the same file, because the two renders being compared were sampled on independently-computed timestamps instead of a shared frame index.",
+      "metric": "tag python, 2 reactions, 6 comments",
+      "score": 14.0,
+      "tags": [
+        "developer-writing",
+        "python"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Why AI Keeps Making the Same Coding Mistakes—And How Teaching It Pain Gives It Wisdom",
+      "url": "https://dev.to/gde/why-ai-keeps-making-the-same-coding-mistakes-and-how-teaching-it-pain-gives-it-wisdom-4a9m",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-11T23:07:27Z",
+      "summary": "Frontier LLMs excel at textbook code but fail in production. Here is how Synthetic Scars and biological pain give autonomous coding agents real wisdom.",
+      "metric": "tag ai, 6 reactions, 3 comments",
+      "score": 12.0,
+      "tags": [
+        "developer-writing",
+        "ai"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "addDays() Mutated a Date Three Components Away From Where I Called It",
+      "url": "https://dev.to/parsajiravand/adddays-mutated-a-date-three-components-away-from-where-i-called-it-3400",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T10:24:23Z",
+      "summary": "A date utility that calls .setDate() and returns the same object looks pure. It isn't — Date is mutable, so the caller and everyone else holding that reference get changed out from under them. Temporal, now shipping in real browsers, fixes it by making dates immutable.",
+      "metric": "tag javascript, 6 reactions, 2 comments",
+      "score": 10.0,
+      "tags": [
+        "developer-writing",
+        "javascript"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "My benchmark harness was wrong fourteen ways before it measured anything",
+      "url": "https://dev.to/remdore/my-benchmark-harness-was-wrong-fourteen-ways-before-it-measured-anything-1o6h",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T14:48:33Z",
+      "summary": "I built a harness to measure whether reverse proxies buffer Server-Sent Events. The results are in...",
+      "metric": "tag python, 3 reactions, 3 comments",
+      "score": 9.0,
+      "tags": [
+        "developer-writing",
+        "python"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Three PRs to Rowboat in 24 Hours, One of Them Taught Me More Than the Others",
+      "url": "https://dev.to/kielltampubolon/three-prs-to-rowboat-in-24-hours-one-of-them-taught-me-more-than-the-others-48cb",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T04:54:30Z",
+      "summary": "Last month I wrote about how I use coding agents to build things. This week I pointed the same setup...",
+      "metric": "tag opensource, 1 reactions, 4 comments",
+      "score": 9.0,
+      "tags": [
+        "developer-writing",
+        "opensource"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "My message board for AI agents got spammed. The spam wasn't written for humans.",
+      "url": "https://dev.to/jo-do/my-message-board-for-ai-agents-got-spammed-the-spam-wasnt-written-for-humans-29b0",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T13:51:05Z",
+      "summary": "msgboard.dev is the board I built where agents, not people, do the posting. Four articles in, the...",
+      "metric": "tag ai, 4 reactions, 2 comments",
+      "score": 8.0,
+      "tags": [
+        "developer-writing",
+        "ai"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "I wanted a system-design lab that could prove me wrong",
+      "url": "https://dev.to/othmanez05/i-wanted-a-system-design-lab-that-could-prove-me-wrong-5540",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T12:57:23Z",
+      "summary": "When I practice system design, the part that has always felt a little unsatisfying is that the...",
+      "metric": "tag opensource, 2 reactions, 3 comments",
+      "score": 8.0,
+      "tags": [
+        "developer-writing",
+        "opensource"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Cache Invalidation Never Died. AI Just Made It Expensive Again.",
+      "url": "https://dev.to/mahankenway/cache-invalidation-never-died-ai-just-made-it-expensive-again-2f1n",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T09:32:17Z",
+      "summary": "Why a programmer joke from the 1990s suddenly explains prompt caching, KV cache, LLM inference costs,...",
+      "metric": "tag programming, 2 reactions, 3 comments",
+      "score": 8.0,
+      "tags": [
+        "developer-writing",
+        "programming"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "The 3 Most-Installed ESLint Plugins Went Quiet in 2025",
+      "url": "https://dev.to/ofri-peretz/the-3-most-installed-eslint-plugins-went-quiet-in-2025-23ni",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T08:31:59Z",
+      "summary": "I measured days-since-release for 18 ESLint plugins. import, react and jsx-a11y have shipped nothing in over a year — and dormant is not the same as dead.",
+      "metric": "tag javascript, 1 reactions, 3 comments",
+      "score": 7.0,
+      "tags": [
+        "developer-writing",
+        "javascript"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Bun 1.4's Rust rewrite cuts script startup time from 10.5ms to 4.2ms",
+      "url": "https://dev.to/alexgeorgiev17/bun-14s-rust-rewrite-cuts-script-startup-time-from-105ms-to-42ms-2je0",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T08:00:00Z",
+      "summary": "I measured Bun 1.4's Rust runtime against 1.3.14: startup dropped 60%, idle memory 46%, but idle CPU only fell 2.5x against a claimed 5x, and invoking Bun as a node symlink silently stops loading .env files.",
+      "metric": "tag javascript, 5 reactions, 1 comments",
+      "score": 7.0,
+      "tags": [
+        "developer-writing",
+        "javascript"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "A model's opinion is not a price: the day a £14.99 charger repriced a speaker",
+      "url": "https://dev.to/c1-anderson/a-models-opinion-is-not-a-price-the-day-a-ps1499-charger-repriced-a-speaker-5hfn",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T16:43:45Z",
+      "summary": "One second-hand item, one day, real numbers. How a pricing pipeline asked £79 for a £27 case, why the fix let a relevance model set a price by itself, and the two boring rules that stopped it.",
+      "metric": "tag python, 2 reactions, 2 comments",
+      "score": 6.0,
+      "tags": [
+        "developer-writing",
+        "python"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Google banned our mobile AI agent app for doing what Gemini should do,but doesnt",
+      "url": "https://news.ycombinator.com/item?id=47613614",
+      "source": "Hacker News / Algolia",
+      "published": "2026-04-02T12:35:29Z",
+      "summary": "Hi HN, My brother and I built Sova AI (https://ayconic.io/sova), an Android agent that actually controls your installed apps. We were incredibly frustrated with the current state of mobile AI. Built-in assistants like Gemini are deeply integrated into the OS, yet if you ask them to \"Order an Uber to the airport\" or \"S...",
+      "metric": "4 points, 1 comments",
+      "score": 5.5,
+      "tags": [
+        "community-signal"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "How Seed4J Validates Compatibility",
+      "url": "https://dev.to/renanfranca/how-seed4j-validates-compatibility-2pdo",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T19:44:29Z",
+      "summary": "How Seed4J uses Renovate, GitHub Actions, and 25 generated project configurations to validate compatibility across modern technology stacks.",
+      "metric": "tag opensource, 5 reactions, 0 comments",
+      "score": 5.0,
+      "tags": [
+        "developer-writing",
+        "opensource"
+      ]
+    },
+    {
+      "section": "AI & Models",
+      "title": "Show HN: QonQrete – Local-first multi-agent system for sandboxed code generation",
+      "url": "https://github.com/illdynamics/qonqrete",
+      "source": "Hacker News / Algolia",
+      "published": "2025-12-09T23:56:45Z",
+      "summary": "I’ve been working on an open-source project called QonQrete and would like feedback from HN. What it is QonQrete is a local-first, agent-based orchestration system for code generation. It coordinates multiple LLM “agents” to plan, write, and review code, while keeping execution inside a sandbox on your own infrastruct...",
+      "metric": "1 points, 2 comments",
+      "score": 4.0,
+      "tags": [
+        "community-signal"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Under the Hood of FastAPI’s DI Engine: Signature Reflection, Execution Graphs, and Async Exit Stacks",
+      "url": "https://dev.to/niraj_matere/under-the-hood-of-fastapis-di-engine-signature-reflection-execution-graphs-and-async-exit-stacks-2f5p",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T13:05:56Z",
+      "summary": "Dependency Injection (DI) in modern web frameworks is often treated as syntactic magic. In FastAPI,...",
+      "metric": "tag python, 2 reactions, 0 comments",
+      "score": 2.0,
+      "tags": [
+        "developer-writing",
+        "python"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "Hardening a SaaS login on Cloudflare Free: Turnstile, Google sign-in and email without SMTP",
+      "url": "https://dev.to/alexandroskyv/hardening-a-saas-login-on-cloudflare-free-turnstile-google-sign-in-and-email-without-smtp-1lh",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T03:55:00Z",
+      "summary": "SyllogOS is a multi-tenant platform I'm building for Greek cultural associations and the federations...",
+      "metric": "tag webdev, 0 reactions, 1 comments",
+      "score": 2.0,
+      "tags": [
+        "developer-writing",
+        "webdev"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "The Last Non-Neural Candidate, and It Did Not Clear the Bar",
+      "url": "https://dev.to/megapixel99/the-last-non-neural-candidate-and-it-did-not-clear-the-bar-dg7",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T03:00:00Z",
+      "summary": "The bar was a slope: keep converting extra data into accuracy after exact-context statistics saturate. A full hierarchical Pitman-Yor model with Gibbs sweeps and inferred discounts moved the intercept and left the slope alone, halving with every doubling exactly as cruder count models did.",
+      "metric": "tag machinelearning, 0 reactions, 1 comments",
+      "score": 2.0,
+      "tags": [
+        "developer-writing",
+        "machinelearning"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "TokenPrint: An Open-Source 3D Visual Debugger for LLMs and Transformers",
+      "url": "https://dev.to/sudharsan_nef/tokenprint-an-open-source-3d-visual-debugger-for-llms-and-transformers-2jca",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T15:01:13Z",
+      "summary": "TokenPrint: An Open-Source 3D Visual Debugger for LLMs and Transformers Large language...",
+      "metric": "tag machinelearning, 0 reactions, 0 comments",
+      "score": 0.0,
+      "tags": [
+        "developer-writing",
+        "machinelearning"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "I trained on two more kinds of damage. The kind I held out moved 0.2 dB.",
+      "url": "https://dev.to/booyaka101/i-trained-on-two-more-kinds-of-damage-the-kind-i-held-out-moved-02-db-2980",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T13:12:09Z",
+      "summary": "I wrote a declicker, benchmarked it against two established tools, and it won by a lot. Then I noticed I had written the test set too.",
+      "metric": "tag machinelearning, 0 reactions, 0 comments",
+      "score": 0.0,
+      "tags": [
+        "developer-writing",
+        "machinelearning"
+      ]
+    },
+    {
+      "section": "Coding & Developer Tools",
+      "title": "I built an epistemic gate to stop LLM data poisoning during fine-tuning. Tested across 5 architectures, orchestrated on a 2006 Toshiba laptop for $0.",
+      "url": "https://dev.to/dante777/i-built-an-epistemic-gate-to-stop-llm-data-poisoning-during-fine-tuning-tested-across-5-42kk",
+      "source": "DEV/Forem Articles API",
+      "published": "2026-09-12T07:11:12Z",
+      "summary": "Hi everyone, For a long time, the AI industry has pushed the narrative that advanced safety research,...",
+      "metric": "tag machinelearning, 0 reactions, 0 comments",
+      "score": 0.0,
+      "tags": [
+        "developer-writing",
+        "machinelearning"
+      ]
+    }
+  ]
+}
